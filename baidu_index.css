@@ -1,0 +1,112 @@
+header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin:19px 0px 0px;
+    padding-right: 96px;
+}
+
+header a,header a:visited {
+    margin-left: 20px;
+    font: 13px arial;
+    font-weight: bold;
+    color: #000000;
+}
+
+header a:hover {
+    color: #00c;
+}
+
+.more_product {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    margin-left: 19px;
+    margin-right: 2px;
+    padding: 3px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #0066FF;
+}
+
+.main {
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+
+.lg img {
+    margin-bottom: 20px;
+    width: 270px;
+    height: 129px;
+}
+
+.searchbox {
+    margin: 0 auto;
+}
+
+.searchbox_text {
+    width: 550px;
+    height:34px;
+}
+
+.searchbox_text:hover {
+    border:1px solid #AAAAAA;
+}
+
+.searchbox_button {
+    width: 100px;
+    height: 34px;
+    border:none;
+    color: #FFFFFF;
+    background-color: #0066FF;
+    font:15px arial;
+}
+
+.searchbox_button:hover {
+    background-color: #4169E1;
+    box-shadow: 1px 1px 1px #DDDDDD;
+}
+
+footer {
+    position: absolute;
+    bottom: 44px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#about {
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about a {
+    margin: 0px 10px;
+    font-size: 12px;
+    color: rgb(0,0,204)
+}
+
+#info {
+    color: rgb(102,102,102);
+    font-family: arial;
+    font-size: 12px;
+}
+
+#info a {
+    color: rgb(102,102,102);
+}
+
+#info i {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png);
+    background-position: -600px -96px;
+}
+
+
+
+
+
