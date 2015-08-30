@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style type="text/css">
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	body {
-		background: yellow;
-		width: 100%;
-	}
-	.div1 {
-		width: 100%;
-		height: 300px;
-		background-color: silver;
-		margin-top: 50px;
-		margin-left: 50px; 
-	}
-	.div2 {
-		position: relative;
-		width: 100%;
-		height: 300px;
-		background-color: red;
-		margin-top: 100px;
-		margin-left: 100px; 
-	}
-	.div3{
-		position: absolute;
-		width: 100px;
-		height: 100px;
-		background-color: orange;
-		margin-top: 100px;
-		margin-left: 100px;
-	}
-	.div4{
-		position: fixed;
-		width: 50px;
-		height: 50px;
-		background-color: blue;
-		margin-top: 10px;
-		margin-left: 10px;
-	}
-	</style>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .textarea {
+        width: 10px;
+        height: 10px;
+        border: 1px solid blue;
+        opacity: 0.3;
+    }
+    
+    .click {
+        width: 200px;
+        height: 12px;
+        background-color: yellow;
+        border: 1px solid blue;
+        opacity: 0.3;
+        position: relative;
+        left: -4px;
+        outline: none;
+    }
+    
+    .click:focus {
+    	border:1px solid red;
+    }
+    div {overflow: hidden;}
+    .div1 {
+        position: relative;
+        left: -8px;
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        display: inline-block;
+        border: 1px solid black;
+    }
+    .div2 {
+        position: relative;
+        left: -12px;
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        display: inline-block;
+        border: 1px solid black;
+    }
+    .div3 {
+        position: relative;
+        left: -16px;
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        display: inline-block;
+        border: 1px solid black;
+    }
+    /*input.test {margin: 10px;}*/
+    </style>
 </head>
+
 <body>
-<div class="div1">
-	<div class="div2">
-		<div class="div3"></div>
-		<div class="div4"></div>
-	</div>
-</div>
+    <input type="text" class="textarea">
+    <input type="submit" value="click me" class="click">
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+
+    <input type="text" class="test">
 </body>
+
 </html>

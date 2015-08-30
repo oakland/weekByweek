@@ -58,7 +58,7 @@ header a..header_login {
 .more_product {
     position: absolute;
     right: 10px;
-    top: 1px;
+    top: 0px;
     margin-left: 19px;
     margin-right: 2px;
     padding: 3px;
@@ -84,10 +84,12 @@ header a..header_login {
 }
 
 .searchbox {
+    position: relative;
     margin: 0 auto;
 }
 
 .searchbox_text {
+    position: relative;
     padding-left: 8px;
     width: 550px;
     height: 34px;
@@ -101,6 +103,27 @@ header a..header_login {
 .searchbox_text:focus {
     border: 1px solid #5599FF;    
     outline: none;
+}
+
+span.voice{
+    position: absolute;
+    right: 410px;
+    top: 3px;
+    width: 30px;
+    height: 32px;
+    background-image: url(voice1.png);
+    background-repeat: no-repeat;
+    background-size:25px 25px; 
+    background-position: 0 50%;
+    cursor: pointer;
+}
+
+span.voice:hover{
+    background-image: url(voice2.png);
+    background-repeat: no-repeat;
+    background-size:25px 25px; 
+    background-position: 0 50%;
+    cursor: pointer;
 }
 
 .searchbox_button {
