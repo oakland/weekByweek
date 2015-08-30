@@ -1,12 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+.wrapper {
+    display: block;
+    position: relative;
+    height: 100%;
+    min-width: 810px;
+    min-height: 600px;
+}
+
+.head {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+}
+
 header {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin:19px 0px 0px;
+    margin: 19px 0px 0px;
     padding-right: 96px;
 }
 
-header a,header a:visited {
+.header_login,.header_set{
+    font-weight: normal;
+}
+
+header a,
+header a:visited {
     margin-left: 20px;
     font: 13px arial;
     font-weight: bold;
@@ -15,6 +48,11 @@ header a,header a:visited {
 
 header a:hover {
     color: #00c;
+}
+
+header a.header_set,
+header a..header_login {
+    font-style: normal;
 }
 
 .more_product {
@@ -27,6 +65,10 @@ header a:hover {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #0066FF;
+}
+
+.more_product:hover {
+    color: #FFFFFF;
 }
 
 .main {
@@ -46,26 +88,35 @@ header a:hover {
 }
 
 .searchbox_text {
+    padding-left: 8px;
     width: 550px;
-    height:34px;
+    height: 34px;
+    border: 1px solid #DDDDDD;
 }
 
 .searchbox_text:hover {
-    border:1px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
+}
+
+.searchbox_text:focus {
+    border: 1px solid #5599FF;    
+    outline: none;
 }
 
 .searchbox_button {
+    margin-left: -5px;
     width: 100px;
-    height: 34px;
-    border:none;
+    height: 36px;
+    border: 1px solid #0066FF;
     color: #FFFFFF;
     background-color: #0066FF;
-    font:15px arial;
+    font: 15px arial;
 }
 
 .searchbox_button:hover {
     background-color: #4169E1;
-    box-shadow: 1px 1px 1px #DDDDDD;
+    box-shadow: 2px 2px 2px #DDDDDD;
+    cursor: pointer;
 }
 
 footer {
@@ -85,17 +136,17 @@ footer {
 #about a {
     margin: 0px 10px;
     font-size: 12px;
-    color: rgb(0,0,204)
+    color: rgb(0, 0, 204)
 }
 
 #info {
-    color: rgb(102,102,102);
+    color: rgb(102, 102, 102);
     font-family: arial;
     font-size: 12px;
 }
 
 #info a {
-    color: rgb(102,102,102);
+    color: rgb(102, 102, 102);
 }
 
 #info i {
@@ -105,8 +156,3 @@ footer {
     background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png);
     background-position: -600px -96px;
 }
-
-
-
-
-
