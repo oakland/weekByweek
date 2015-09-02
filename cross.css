@@ -4,43 +4,45 @@
 }
 
 #outer {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
+	margin: 0 auto;
+	width: 500px;
 }
 
 .left {
     width: 100px;
     height: 100px;
     background-color: orange;
-    position: relative;
-    left: -100px;
-    top:200px
+    float: left;
+
 }
 
 .top {
     width: 100px;
     height: 100px;
     background-color: blue;
+    float: left;
 }
 
 .center {
     width: 100px;
     height: 100px;
     background-color: yellow;
+    float: left;
 }
 
 .bottom {
     width: 100px;
     height: 100px;
     background-color: red;
+    float: left;
 }
 
 .right {
     width: 100px;
     height: 100px;
     background-color: green;
+    float: left;
     position: relative;
-    left: 100px;
-    top:-200px;
+    left: -200px;
+    top: 100px;
 }
