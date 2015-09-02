@@ -4,45 +4,40 @@
 }
 
 #outer {
-	margin: 0 auto;
-	width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    background-color: silver;
+    width: 300px;
+    height: 300px;
 }
 
-.left {
+div.top,div.left,div.center,div.right,div.bottom {
     width: 100px;
     height: 100px;
-    background-color: orange;
-    float: left;
-
 }
 
 .top {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    float: left;
-}
-
-.center {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    float: left;
-}
-
-.bottom {
-    width: 100px;
-    height: 100px;
     background-color: red;
-    float: left;
+    margin-left: 100px;
 }
-
+.left {
+    background-color: orange;
+    display: inline-block;
+}
+.center {
+    background-color: yellow;
+    display: inline-block;
+    margin-left: -4px;
+}
 .right {
-    width: 100px;
-    height: 100px;
     background-color: green;
-    float: left;
-    position: relative;
-    left: -200px;
-    top: 100px;
+    display: inline-block;
+    margin-left: -4px;
+}
+.bottom {
+    background-color: blue;
+    margin-left: 100px;
 }
