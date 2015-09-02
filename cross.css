@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#outer {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: relative;
+    left: -100px;
+    top:200px
+}
+
+.top {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.center {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.bottom {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.right {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    left: 100px;
+    top:-200px;
+}

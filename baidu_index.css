@@ -20,7 +20,7 @@ body {
     min-height: 600px;
 }
 
-.head {
+.wrapper .head {
     position: relative;
     height: 100%;
     min-height: 600px;
@@ -28,19 +28,20 @@ body {
 
 header {
     position: absolute;
-    top: 0px;
+    top: 3px;
     right: 0px;
     margin: 19px 0px 0px;
     padding-right: 96px;
 }
 
-.header_login,.header_set{
+header .header_login,
+.header_set {
     font-weight: normal;
 }
 
 header a,
 header a:visited {
-    margin-left: 20px;
+    margin-left: 16px;
     font: 13px arial;
     font-weight: bold;
     color: #000000;
@@ -55,79 +56,89 @@ header a..header_login {
     font-style: normal;
 }
 
-.more_product {
+#header .more_product {
     position: absolute;
     right: 10px;
     top: 0px;
     margin-left: 19px;
     margin-right: 2px;
-    padding: 3px;
+    padding: 5px;
     color: #FFFFFF;
     text-decoration: none;
     background-color: #0066FF;
 }
 
-.more_product:hover {
+header .more_product:hover {
     color: #FFFFFF;
 }
 
 .main {
     position: relative;
-    top: 60px;
+    top: 52px;
     text-align: center;
 }
 
-.lg img {
+.main .lg img {
     margin-bottom: 20px;
     width: 270px;
     height: 129px;
 }
 
-.searchbox {
+.main .searchbox {
     position: relative;
     margin: 0 auto;
 }
 
-.searchbox_text {
+.searchbox .searchbox_wrapper {
     position: relative;
-    padding-left: 8px;
-    width: 550px;
+    margin: 0 auto;
+    width: 560px;
     height: 34px;
-    border: 1px solid #DDDDDD;
+    display: inline;
 }
 
-.searchbox_text:hover {
+.main .searchbox_text {
+    position: relative;
+    margin-top: 5px;
+    padding-left: 8px;
+    width: 535px;
+    height: 34px;
+    border: 1px solid #DDDDDD;
+    font: 15px arial;
+}
+
+.main .searchbox_text:hover {
     border: 1px solid #AAAAAA;
 }
 
-.searchbox_text:focus {
-    border: 1px solid #5599FF;    
+.main .searchbox_text:focus {
+    border: 1px solid #5599FF;
     outline: none;
 }
 
-span.voice{
+.searchbox span.voice {
     position: absolute;
-    right: 410px;
-    top: 3px;
+    right: 5px;
+    top: -8px;
     width: 30px;
     height: 32px;
     background-image: url(voice1.png);
     background-repeat: no-repeat;
-    background-size:25px 25px; 
+    background-size: 25px 25px;
     background-position: 0 50%;
     cursor: pointer;
 }
 
-span.voice:hover{
+.searchbox span.voice:hover {
     background-image: url(voice2.png);
     background-repeat: no-repeat;
-    background-size:25px 25px; 
+    background-size: 25px 25px;
     background-position: 0 50%;
     cursor: pointer;
 }
 
-.searchbox_button {
-    margin-left: -5px;
+.searchbox .searchbox_button {
+    margin-left: -4px;
     width: 100px;
     height: 36px;
     border: 1px solid #0066FF;
@@ -136,7 +147,7 @@ span.voice:hover{
     font: 15px arial;
 }
 
-.searchbox_button:hover {
+.searchbox .searchbox_button:hover {
     background-color: #4169E1;
     border: 1px solid #4169E1;
     box-shadow: 2px 2px 2px #DDDDDD;
@@ -145,38 +156,40 @@ span.voice:hover{
 
 footer {
     position: absolute;
-    bottom: 44px;
+    bottom: 35px;
     width: 100%;
     height: 100px;
     text-align: center;
 }
 
-#about {
+footer p {
+    line-height: 22px;
+}
+footer #about {
     width: 720px;
     margin: 0 auto;
     text-align: center;
 }
 
-#about a {
-    margin: 0px 10px;
+footer #about a {
+    margin: 0px 8px;
     font-size: 12px;
     color: rgb(0, 0, 204)
 }
 
-#info {
+footer #info {
     color: rgb(102, 102, 102);
-    font-family: arial;
     font-size: 12px;
 }
 
-#info a {
+footer #info a {
     color: rgb(102, 102, 102);
 }
 
-#info i {
+footer #info i {
     display: inline-block;
     width: 14px;
     height: 17px;
-    background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png);
+    background-image: url(icons_45de3f02.png);
     background-position: -600px -96px;
 }
