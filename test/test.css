@@ -1,0 +1,49 @@
+/*p {
+	display: -webkit-box;
+	-webkit-box-orient:horizonal;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    -webkit-column-count: 10;
+    -webkit-column-rule: 1px dotted grey;
+    background-color: yellow;
+}
+
+.center {
+    width: 800px;
+    height: 800px;
+    background-color: orange;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+
+.outer {
+    height: 200px;
+    width: 600px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.div1 {
+    width: 300px;
+    -webkit-box-flex: 1;
+    background-color: red;
+}
+
+.div2 {
+    -webkit-box-flex: 1;
+    background-color: yellow;
+}
+
+.div3 {
+    -webkit-box-flex: 1;
+    background-color: blue;
+}

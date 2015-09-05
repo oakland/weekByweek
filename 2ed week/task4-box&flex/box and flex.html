@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>box and flex</title>
+    <link rel="stylesheet" type="text/css" href="./css/box and flex.css">
+</head>
+
+<body>
+    <div class="content-box">我是<span class="blue">content-box。</span>（正常box模型）
+        <br>我的属性是width:300px; height:300px; border:30px; padding:30px;我是以300X300向外扩展padding30,border30。
+    </div>
+    <hr>
+    <div class="border-box">我是<span class="blue">border-box。</span>（怪异box模型）
+        <br>我的属性和前一个div属性完全相同，width:300px; height:300px; border:50px; padding:50px;<span class="blue">但是，</span>我是以300X300向内扩展padding30,border30。
+    </div>
+    <hr>
+    <!-- 普通盒模型和怪异盒模型 end -->
+    <div class="outer0">
+        <div class="div1">box1
+            <br>
+            <br>flex1
+            <br>height:100
+            <br><span class="blue">outer:align-items"flex-start"</span></div>
+        <div class="div2">box2
+            <br>
+            <br>flex2
+            <br>height:200
+            <br><span class="blue">outer:align-items"flex-start"</span></div>
+        <div class="div3">box3
+            <br>
+            <br>flex3
+            <br>height:300
+            <br><span class="blue">outer:align-items"flex-start"</span></div>
+    </div>
+    <!-- outer0 flex-align:flex-start默认值 end -->
+    <hr>
+    <div class="outer1">
+        <div class="div1">box1
+            <br>
+            <br>flex1
+            <br>height:100
+            <br><span class="blue">outer:align-items"center"</span></div>
+        <div class="div2">box2
+            <br>
+            <br>flex2
+            <br>height:200
+            <br><span class="blue">outer:align-items"center"</span></div>
+        <div class="div3">box3
+            <br>
+            <br>flex3
+            <br>height:300
+            <br><span class="blue">outer:align-items"center"</span></div>
+    </div>
+    <!-- outer1 flex-align:center end -->
+    <hr>
+    <div class="outer2">
+        <div class="div1">box1
+            <br>
+            <br>flex1
+            <br>height:100
+            <br><span class="blue">outer:align-items"flex-end"</span></div>
+        <div class="div2">box2
+            <br>
+            <br>flex2
+            <br>height:200
+            <br><span class="blue">outer:align-items"flex-end"</span></div>
+        <div class="div3">box3
+            <br>
+            <br>flex3
+            <br>height:300
+            <br><span class="blue">outer:align-items"flex-end"</span></div>
+    </div>
+    <!-- outer2 flex-align:flex-end end -->
+    <hr>
+    <div class="outer3">
+        <div class="div4">box4
+            <br>
+            <br>flex1
+            <br>width:300
+            <br><span class="blue">outer:align-items"flex-start"</span></div>
+        <div class="div5">box5
+            <br>
+            <br>flex2
+            <br>width:600
+            <br><span class="blue">outer:align-items"flex-start"</span></div>
+        <div class="div6">box6
+            <br>
+            <br>flex3
+            <br>width:900
+            <br><span class="blue">outer:align-items"flex-start"</span></div>
+    </div>
+    <!-- outer3 flex-align:flex-end end -->
+    <hr>
+    <div class="outer4">
+        <div class="div4">box4
+            <br>
+            <br>flex1
+            <br>width:300
+            <br><span class="blue">outer:align-items"center"</span></div>
+        <div class="div5">box5
+            <br>
+            <br>flex2
+            <br>width:600
+            <br><span class="blue">outer:align-items"center"</span></div>
+        <div class="div6">box6
+            <br>
+            <br>flex3
+            <br>width:900
+            <br><span class="blue">outer:align-items"center"</span></div>
+    </div>
+    <!-- outer3 flex-align:flex-end end -->
+    <hr>
+    <div class="outer5">
+        <div class="div4">box4
+            <br>
+            <br>flex1
+            <br>width:300
+            <br><span class="blue">outer:align-items"flex-end"</span></div>
+        <div class="div5">box5
+            <br>
+            <br>flex2
+            <br>width:600
+            <br><span class="blue">outer:align-items"flex-end"</span></div>
+        <div class="div6">box6
+            <br>
+            <br>flex3
+            <br>width:900
+            <br><span class="blue">outer:align-items"flex-end"</span></div>
+    </div>
+    <!-- outer3 flex-align:flex-end end -->
+</body>
+
+</html>

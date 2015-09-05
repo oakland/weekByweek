@@ -3,26 +3,14 @@
     padding: 0;
 }
 body {
-    background-image: url(Torcross_EN-US9088790716_1920x1200.jpg);
+    background-image: url(../img/Torcross_EN-US9088790716_1920x1200.jpg);
     background-repeat: no-repeat;
-    min-width: 1000px;
+    background-size:cover;
 }
-/*.backgroundimg img {
-    width: 100%;
-    min-width: 1000px;
-}*/
-#outer {
+div.top,div.left,div.center,div.right,div.bottom {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -150px;
-    margin-top: -150px;
-    /*background-color: silver;*/
-    width: 300px;
-    height: 300px;
-}
-
-div.top,div.left,div.center,div.right,div.bottom {
     width: 100px;
     height: 100px;
     text-align: center;
@@ -36,25 +24,28 @@ div.top,div.left,div.center,div.right,div.bottom {
 
 .top {
     background-color: rgba(0, 85, 255, 0.49);
-    margin-left: 100px;
+    margin-left: -50px;
+    margin-top: -150px;
 }
 .left {
     background-color: rgba(255, 165, 0, 0.64);
-    display: inline-block;
+    margin-left: -150px;
+    margin-top: -50px;
 }
 div.center {
-    background-image: url(Heart_72px_1096420_easyicon.net.png);
+    background-image: url(../img/Heart_72px_1096420_easyicon.net.png);
     background-repeat: no-repeat;
     background-position:14px 17px;
-    display: inline-block;
-    margin-left: -4px;
+    margin-left: -50px;
+    margin-top: -50px;
 }
 .right {
     background-color: rgba(47, 0, 128, 0.49);
-    display: inline-block;
-    margin-left: -4px;
+    margin-left: 50px;
+    margin-top: -50px;
 }
 .bottom {
     background-color: rgba(255, 0, 113, 0.64);
-    margin-left: 100px;
+    margin-left: -50px;
+    margin-top: 50px;
 }

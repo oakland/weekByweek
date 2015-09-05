@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-box,
+.border-box {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 30px solid grey;
+    background-color: orange;
+    overflow-y: auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+span.blue {
+    color: blue;
+}
+
+
+/*普通盒模型和怪异盒模型 end*/
+
+.outer0 {
+    margin: 30px auto;
+    width: 900px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.div1 {
+    flex: 1;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+}
+
+.div2 {
+    flex: 2;
+    height: 200px;
+    background-color: orange;
+    text-align: center;
+}
+
+.div3 {
+    flex: 3;
+    height: 300px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.outer1 {
+    margin: 30px auto;
+    width: 900px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.outer2 {
+    margin: 30px auto;
+    width: 900px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.outer3 {
+    margin: 30px auto;
+    width: 900px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.div4 {
+    flex: 1;
+    width: 300px;
+    background-color: red;
+    text-align: center;
+    overflow: scroll;
+}
+
+.div5 {
+    flex: 2;
+    width: 600px;
+    background-color: orange;
+    text-align: center;
+    overflow: scroll;
+}
+
+.div6 {
+    flex: 3;
+    width: 900px;
+    background-color: yellow;
+    text-align: center;
+    overflow: scroll;
+}
+
+.outer4 {
+    margin: 30px auto;
+    width: 900px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.outer5 {
+    margin: 30px auto;
+    width: 900px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}

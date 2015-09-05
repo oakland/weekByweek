@@ -122,7 +122,7 @@ header .more_product:hover {
     top: -8px;
     width: 30px;
     height: 32px;
-    background-image: url(voice1.png);
+    background-image: url(../img/voice1.png);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: 0 50%;
@@ -130,7 +130,7 @@ header .more_product:hover {
 }
 
 .searchbox span.voice:hover {
-    background-image: url(voice2.png);
+    background-image: url(../img/voice2.png);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: 0 50%;
@@ -141,7 +141,7 @@ header .more_product:hover {
     margin-left: -4px;
     width: 100px;
     height: 36px;
-    border: 1px solid #0066FF;
+    border: none;
     color: #FFFFFF;
     background-color: #0066FF;
     font: 15px arial;
@@ -190,6 +190,6 @@ footer #info i {
     display: inline-block;
     width: 14px;
     height: 17px;
-    background-image: url(icons_45de3f02.png);
+    background-image: url(../img/icons_45de3f02.png);
     background-position: -600px -96px;
 }
