@@ -87,7 +87,8 @@ header .more_product:hover {
 
 .main .searchbox {
     position: relative;
-    margin: 0 auto;
+    margin: -3px auto;
+    font-size: 15px;
 }
 
 .searchbox .searchbox_wrapper {
@@ -103,7 +104,7 @@ header .more_product:hover {
     position: relative;
     margin-top: 5px;
     padding-left: 8px;
-    width: 535px;
+    width: 530px;
     height: 34px;
     border: 1px solid #DDDDDD;
     font: 15px arial;
@@ -140,13 +141,15 @@ header .more_product:hover {
 }
 
 .searchbox .searchbox_button {
-    margin-left: -4px;
+    margin-left: -8px;
     width: 100px;
     height: 36px;
-    border: 1px solid #0066FF;
+    border: none;
     color: #FFFFFF;
     background-color: #38F;
     font: 15px arial;
+    letter-spacing: 1px;
+    outline: none;
 }
 
 .searchbox .searchbox_button:hover {
