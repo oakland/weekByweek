@@ -10,6 +10,7 @@ html {
 body {
     position: relative;
     height: 100%;
+    _min-height: 600px;
 }
 
 .wrapper {
@@ -19,6 +20,7 @@ body {
     min-width: 810px;
     _width:810px;
     min-height: 600px;
+    _min-height: 600px;
 }
 
 .wrapper .head {
@@ -77,7 +79,7 @@ header .more_product:hover {
 
 .main {
     position: relative;
-    top: 70px;
+    top: 90px;
     text-align: center;
 }
 
@@ -89,7 +91,7 @@ header .more_product:hover {
 
 .main .searchbox {
     position: relative;
-    margin: -3px auto;
+    margin: 0 auto;
     font-size: 15px;
 }
 
@@ -99,12 +101,11 @@ header .more_product:hover {
     margin: 0 auto;
     width: 560px;
     height: 34px;
-    display: inline;
+    display: inline-block;
 }
 
 .main .searchbox_text {
     position: relative;
-    margin-top: 5px;
     padding-left: 8px;
     width: 530px;
     height: 34px;
@@ -123,8 +124,8 @@ header .more_product:hover {
 
 .searchbox span.voice {
     position: absolute;
-    right: 5px;
-    top: -8px;
+    right: 8px;
+    top: 3px;
     width: 30px;
     height: 32px;
     background-image: url(../img/voice1.png);
@@ -143,9 +144,20 @@ header .more_product:hover {
 }
 
 .searchbox .searchbox_button {
-    margin-left: -8px;
+    display: inline-block;
+    position: relative;
+    left: -14px;
+    
+}
+
+.searchbox .searchbox_button:hover {
+    box-shadow: 1px 1px 1px #ccc;
+    behavior: url(./ie-css3.htc);
+}
+
+.searchbox .searchbox_button input {
     width: 100px;
-    height: 36px;
+    height: 38px;
     border: none;
     color: #FFFFFF;
     background-color: #38F;
@@ -153,12 +165,9 @@ header .more_product:hover {
     letter-spacing: 1px;
     outline: none;
 }
-
-.searchbox .searchbox_button:hover {
-    background-color: #4169E1;
-    border: 1px solid #4169E1;
-    box-shadow: 1px 1px 1px #ccc;
+.searchbox .searchbox_button input:hover {
     cursor: pointer;
+    background-color: #4169E1;
 }
 
 footer {
@@ -169,9 +178,6 @@ footer {
     text-align: center;
 }
 
-footer p {
-    line-height: 22px;
-}
 footer #about {
     width: 720px;
     margin: 0 auto;
