@@ -7,6 +7,9 @@ body {
     background-image: url(../img/ALMA_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .box {
@@ -16,6 +19,12 @@ body {
     margin-left: -70px;
     margin-top: -200px;
     display: inline-block;
+    transform-origin: 60px 150px;
+    -webkit-transform-origin: 60px 150px;
+    -moz-transform-origin: 60px 150px;
+    animation: animation_box 20s linear infinite;
+    -webkit-animation: animation_box 20s linear infinite;
+    -moz-animation: animation_box 20s linear infinite;
 }
 
 div[class^=leaf] {
@@ -25,122 +34,64 @@ div[class^=leaf] {
     border-bottom: 100px solid transparent;
     border-left: 0px solid transparent;
     position: absolute;
-    -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
     z-index: 1;
 }
 
 .leaf1 {
     border-right: 60px solid #F53838;
     -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
     transform: rotate(15deg);
-    -webkit-animation: animation_leaf1 8s linear infinite;
-    animation: animation_leaf1 8s linear infinite;    
 }
 
 .leaf2 {
     border-right: 60px solid orange;
     -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
     transform: rotate(75deg);
-    -webkit-animation: animation_leaf2 8s linear infinite;
-    animation: animation_leaf2 8s linear infinite;
 }
 
 .leaf3 {
     border-right: 60px solid yellow;
     -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
     transform: rotate(135deg);
-    -webkit-animation: animation_leaf3 8s linear infinite;
-    animation: animation_leaf3 8s linear infinite;
 }
 
 .leaf4 {
     border-right: 60px solid #40B93B;
     -webkit-transform: rotate(195deg);
+    -moz-transform: rotate(195deg);
     transform: rotate(195deg);
-    -webkit-animation: animation_leaf4 8s linear infinite;
-    animation: animation_leaf4 8s linear infinite;
 }
 
 .leaf5 {
     border-right: 60px solid #9093EF;
     -webkit-transform: rotate(255deg);
+    -moz-transform: rotate(255deg);
     transform: rotate(255deg);
-    -webkit-animation: animation_leaf5 8s linear infinite;
-    animation: animation_leaf5 8s linear infinite;
 }
 
 .leaf6 {
     border-right: 60px solid #AD4CAD;
     -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
     transform: rotate(315deg);
-    -webkit-animation: animation_leaf6 8s linear infinite;
-    animation: animation_leaf6 8s linear infinite;
 }
 
-@-webkit-keyframes animation_leaf1 {
+@-webkit-keyframes animation_box {
     0% {
         -webkit-transform: rotate(15deg);
+        mozt-transform: rotate(15deg);
         transform: rotate(15deg);
     }
     100% {
         -webkit-transform: rotate(375deg);
+        -moz-transform: rotate(375deg);
         transform: rotate(375deg);
-    }
-}
-
-@-webkit-keyframes animation_leaf2 {
-    0% {
-        -webkit-transform: rotate(75deg);
-        transform: rotate(75deg);
-    }
-    100% {
-        -webkit-transform: rotate(435deg);
-        transform: rotate(435deg);
-    }
-}
-
-@-webkit-keyframes animation_leaf3 {
-    0% {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-    }
-    100% {
-        -webkit-transform: rotate(495deg);
-        transform: rotate(495deg);
-    }
-}
-
-@-webkit-keyframes animation_leaf4 {
-    0% {
-        -webkit-transform: rotate(195deg);
-        transform: rotate(195deg);
-    }
-    100% {
-        -webkit-transform: rotate(555deg);
-        transform: rotate(555deg);
-    }
-}
-
-@-webkit-keyframes animation_leaf5 {
-    0% {
-        -webkit-transform: rotate(255deg);
-        transform: rotate(255deg);
-    }
-    100% {
-        -webkit-transform: rotate(615deg);
-        transform: rotate(615deg);
-    }
-}
-
-@-webkit-keyframes animation_leaf6 {
-    0% {
-        -webkit-transform: rotate(315deg);
-        transform: rotate(315deg);
-    }
-    100% {
-        -webkit-transform: rotate(675deg);
-        transform: rotate(675deg);
     }
 }
 
@@ -154,27 +105,32 @@ div[class^=leaf] {
     top: 50%;
     margin-left: -15px;
     margin-top: -49px;
-    z-index: 0;
+    z-index: -1;
 }
-.box_star1{
-   margin-left: 100px;
-   margin-top: 100px;
-   transform:rotate(-30deg);
-   transform-origin:100px 100px;
-   animation: blink 2s ease-out infinite; 
+
+.box_star1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    transform-origin: 100px 100px;
+    -webkit-transform-origin: 100px 100px;
+    -moz-transform-origin: 100px 100px;
+    animation: blink 2s ease-out infinite;
+    -webkit-animation: blink 2s ease-out infinite;
+    -moz-animation: blink 2s ease-out infinite;
 }
+
 .star1 {
     width: 0;
     height: 0;
-    color: orange;
     display: block;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 35px solid orange;
     -moz-transfrom: rotate(35deg);
     -webkit-transform: rotate(35deg);
-    -ms-transform: rotate(35deg);
-    -o-transform: rotate(35deg);
 }
 
 .star1:before {
@@ -191,8 +147,7 @@ div[class^=leaf] {
     content: "";
     -moz-transform: rotate(-35deg);
     -webkit-transform: rotate(-35deg);
-    -ms-transform: rotate(-35deg);
-    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
 }
 
 .star1:after {
@@ -209,45 +164,175 @@ div[class^=leaf] {
     content: "";
     -moz-transform: rotate(-70deg);
     -webkit-transform: rotate(-70deg);
-    -ms-transform: rotate(-70deg);
-    -o-transform: rotate(-70deg);
+    transform: rotate(-70deg);
 }
-.box_star2{
-   margin-left: 100px;
-   margin-top: 10px;
-   transform:rotate(-40deg) translate(300px,400px) scale(0.75);
-   transform-origin:100px 400px;
-   animation: blink 2s ease-out infinite; 
-}
-.box_star3{
-   margin-left: 500px;
-   margin-top: 100px;
-   transform:rotate(-60deg) translate(200px,100px) scale(1.5);
-   transform-origin:100px 200px; 
-   animation: blink 2s ease-out infinite; 
 
+.box_star2 {
+    margin-left: 100px;
+    margin-top: 10px;
+    transform: rotate(-40deg) translate(300px, 400px) scale(0.75);
+    transform-origin: 100px 400px;
+    animation: blink 2s ease-out infinite;
 }
-.box_star4{
-   margin-left: 700px;
-   margin-top: -100px;
-   transform:rotate(-10deg) translate(100px,200px) scale(1.2);
-   transform-origin:100px 100px; 
-   animation: blink 2s ease-out infinite; 
 
+.box_star3 {
+    margin-left: 500px;
+    margin-top: 100px;
+    transform: rotate(-60deg) translate(200px, 100px) scale(1.5);
+    transform-origin: 100px 200px;
+    animation: blink 2s ease-out infinite;
 }
-.box_star5{
-   margin-left: 600px;
-   margin-top: -50px;
-   transform:rotate(-75deg) translate(150px,300px) scale(0.6);
-   transform-origin:100px -100px; 
-   animation: blink 2s ease-out infinite; 
 
+.box_star4 {
+    margin-left: 700px;
+    margin-top: -100px;
+    transform: rotate(-10deg) translate(100px, 200px) scale(1.2);
+    transform-origin: 100px 100px;
+    animation: blink 2s ease-out infinite;
 }
+
+.box_star5 {
+    margin-left: 600px;
+    margin-top: -50px;
+    transform: rotate(-75deg) translate(150px, 300px) scale(0.6);
+    transform-origin: 100px -100px;
+    animation: blink 2s ease-out infinite;
+}
+
 @keyframes blink {
     0% {
         opacity: 0.3;
     }
     100% {
         opacity: 1.0;
+    }
+}
+
+div#fish_box1 {
+    position: relative;
+    left: 600px;
+    top: 200px;
+    transform: scale(0.5);
+    animation: swim 5s ease-out infinite;
+}
+
+div#fish {
+    position: relative;
+}
+
+div#bubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+    opacity: 0.7;
+    position: relative;
+    top: -80px;
+    left: -30px;
+    animation: float 5s ease-out infinite;
+}
+
+div.fish_head {
+    width: 200px;
+    height: 150px;
+    background-color: #E84E29;
+    border-radius: 50%;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+div.fish_body {
+    position: absolute;
+    top: -25px;
+    left: 92px;
+    border: 5px solid #FFFFFF;
+    border-radius: 150px;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 150px solid #E84E29;
+    border-right: 100px solid #E84E29;
+}
+
+div.fish_head2 {
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+div.fish_eyes {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    background-color: #E84E29;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+div.fish_mouth {
+    width: 40px;
+    height: 25px;
+    border-radius: 50%;
+    border: 6px solid #FFF;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+
+@keyframes swim {
+    0% {
+        position: relative;
+        left: 600px;
+        top: 150px;
+    }
+    100% {
+        position: relative;
+        left: 200px;
+        top: 150px;
+    }
+}
+
+@keyframes float {
+    0% {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #FFF;
+        opacity: 0.7;
+        position: relative;
+        top: -80px;
+        left: -30px;
+    }
+    10% {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #FFF;
+        opacity: 0.6;
+        position: relative;
+        top: -100px;
+        left: -40px;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #FFF;
+        opacity: 0;
+        position: relative;
+        top: -400px;
+        left: -80px;
     }
 }
