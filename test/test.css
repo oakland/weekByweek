@@ -219,19 +219,28 @@ div.inner {
 }*/
 
 /*==========================分割线================================*/
-span.test {
-    height: 28px;
-    background: linear-gradient(#F9EFDC,#E89F0B);
-    border: 1px solid #DABF89;
-    border-radius: 7px;
-    padding: 5px 10px;
-    text-align: center;
-    line-height: 28px;
+textarea.msg {
+    padding: 0 5px 5px 0;
+    background: url(btn.png) right bottom no-repeat content-box;
+    background-size: 50%;
 }
-
-
-
-
+.passwd {
+    background: url(Heart_72px_1096420_easyicon.net.png) right center no-repeat;
+    background-size: 12%;
+}
+div.outer {
+    width: 300px;
+    height: 150px;
+    background-color: silver;
+    overflow: hidden;
+}
+div.inner {
+    width: 200px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid #F7EEEE;
+    margin: 20px auto auto 10px;
+    border-radius: 1px;
+}
 
 
 
