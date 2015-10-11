@@ -227,66 +227,12 @@ div.inner {
 
 
 /*==========================分割线================================*/
-
-div.bggradient1 {
-    width: 200px;
-    height: 50px;
-    background: -webkit-linear-gradient( left, #DFEFFF, #017FFD);
-    border: 2px solid #017FFD;
-    border-radius: 10px;
+.container {
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+    background: orange;
+    border-radius: 50%;
+    outline: 200px dashed red;
 }
 
-div.bggradient2 {
-    width: 200px;
-    height: 50px;
-    background: -webkit-linear-gradient( top, #DFEFFF, #017FFD);
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}
-
-div.bggradient3 {
-    width: 200px;
-    height: 50px;
-    background: -webkit-linear-gradient(left, #DFEFFF, #017FFD, #DFEFFF);
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}
-
-div.bggradient4 {
-    width: 200px;
-    height: 50px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#DFEFFF), color-stop(60%, #017FFD), color-stop(75%, #017FFD), to(#DFEFFF));
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}
-
-div.bggradient5 {
-    width: 200px;
-    height: 50px;
-    background: -webkit-gradient(linear, left top, right top, from(red), 
-        color-stop(16%, orange), color-stop(32%, yellow), color-stop(48%, green), color-stop(64%, blue), color-stop(80%, darkblue), 
-        to(purple));
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}
-div.bggradient6 {
-    width: 200px;
-    height: 200px;
-    background: -webkit-radial-gradient(50% 50%, circle, red 5%, orange 15%, yellow 30%);
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}
-div.bggradient7 {
-    width: 400px;
-    height: 200px;
-    background: -webkit-radial-gradient(50% 50%, circle, red 5%, orange 15%, yellow 30%);
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}
-div.bggradient8 {
-    width: 400px;
-    height: 200px;
-    background: -webkit-radial-gradient(50% 50%, ellipse, red 5%, orange 15%, yellow 30%);
-    border: 2px solid #017FFD;
-    border-radius: 10px;
-}

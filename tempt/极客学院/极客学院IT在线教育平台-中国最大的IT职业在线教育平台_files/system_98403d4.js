@@ -1,0 +1,1 @@
+define("index:widget/system/system.js",function(n,a,i){var t=t||{};t={init:function(){$(".allmap").bind("click",this.allmap)},allmap:function(){$(".mapbox").css("height","auto")},cardborder:function(){var n=$(".card-transform");n.each(function(n){})}},i.exports=t});
