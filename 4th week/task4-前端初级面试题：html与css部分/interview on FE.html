@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>interview on FE</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>初级前端面试题&nbsp;&nbsp;<small>html与css部分</small></h1>
+        </div>
+        <div class="jumbotron">
+            <blockquote>
+                <h2 class="text-center">学而不思则罔，思而不学则殆。</h2>
+                <footer class="text-center">孔子</footer>
+            </blockquote>
+        </div>
+        <!-- jumbotron end -->
+        <h3 class="bg-primary">问答题</h3>
+        <hr>
+        <h4 class="bg-info">html部分</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>1.xhtml和html有什么区别</h4>
+            </div>
+            <div class="panel-body">HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言。最主要的不同：XHTML元素必须被正确地嵌套。XHTML元素必须被关闭。标签名必须用小写字母。XHTML文档必须拥有根元素。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>2.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?</h4>
+            </div>
+            <div class="panel-body">用于声明文档使用哪种规范(html/Xhtml)。一般分为：严格、过度、基于框架的html文档。&lt;!DOCTYPE&gt;声明位于文档中的最前面的位置，处于&lt;html&gt;标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。<br><strong>重点：告诉浏览器按照何种规范解析页面</strong>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>3.行内元素有哪些?块级元素有哪些?CSS的盒模型? 行内元素和块级元素的具体区别是什么？行内元素的padding和margin可设置吗？</h4>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>块级元素：<code>div\p\h1-6\form\ul</code></li>
+                    <li>行内元素: <code>a\b\br\i\span\input\select</code></li>
+                    <li>Css盒模型:content,border,margin,padding</li>
+                </ul>
+                块级元素(block)特性：
+                <ul>
+                    <li>总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;</li>
+                    <li>宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;</li>
+                </ul>
+                内联元素(inline)特性：
+                <ul>
+                    <li>和相邻的内联元素在同一行;</li>
+                    <li>宽度(width)、高度(height)、内边距的top/bottom(padding-top/padding-bottom)和外边距的top/bottom(margin-top/margin-bottom)都不可改变（也就是padding和margin的left和right是可以设置的），就是里面文字或图片的大小。
+                    </li>
+                </ul>
+                img属于行内替换元素。height/width/padding/margin均可用。效果等于块元素。行内非替换元素，例如, height/width/padding top、bottom/margin top、bottom均无效果。只能用padding left、right和padding left、right改变宽度。
+                那么问题来了，浏览器还有默认的天生inline-block元素（拥有内在尺寸，可设置高宽，但不会自动换行），有哪些？ 答案： &lt;input&gt; 、&lt;img&gt; 、&lt;button&gt; 、&lt;textarea&gt; 、&lt;label&gt;。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>4.CSS引入的方式有哪些? link和@import的区别是?</h4>
+            </div>
+            <div class="panel-body">
+                <ol>
+                    <li>外部样式表，通过link标签引入一个外部css文件。</li>
+                    <li>内部样式表，将css代码放在 &lt;head&gt;标签内部，通过style标签书写。</li>
+                    <li>内联样式，将css样式直接定义在 HTML 元素内部</li>
+                </ol>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>5.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?</h4>
+            </div>
+            <div class="panel-body">标签选择符 类选择符 id选择符 　　继承不如指定 Id>class>标签选择 　　后者优先级高。•派生选择器（用HTML标签申明） •id选择器（用DOM的ID申明） •类选择器（用一个样式类名申明） •属性选择器（用DOM的属性申明，属于CSS2，IE6不支持，不常用，不知道就算了） 除了前3种基本选择器，还有一些扩展选择器，包括 •后代选择器（利用空格间隔，比如div .a{ }） •群组选择器（利用逗号间隔，比如p,div,#a{ }）　 那么问题来了，CSS选择器的优先级是怎么样定义的？ 基本原则： 一般而言，选择器越特殊，它的优先级越高。也就是选择器指向的越准确，它的优先级就越高。 复杂的计算方法： •用1表示派生选择器的优先级 •用10表示类选择器的优先级 •用100标示ID选择器的优先级 •div.test1 .span var 优先级 1+10 +10 +1 •span#xxx .songs li 优先级1+100 + 10 + 1 •#xxx li 优先级 100 +1
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>6.css的基本语句构成是?</h4>
+            </div>
+            <div class="panel-body">选择器{属性1:值1;属性2:值2;……}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>7.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</h4>
+            </div>
+            <div class="panel-body">Ie(Ie内核、trident内核) 火狐(Gecko) 谷歌(webkit) opear(Presto) • Safari:webkit内核 • Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核 • Chrome:Blink(基于webkit，Google与Opera Software共同开发)
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>8.写出几种IE6 BUG的解决方法</h4>
+            </div>
+            <div class="panel-body">1.双边距BUG float引起的 使用display 　　2.3像素问题 使用float引起的 使用dislpay:inline -3px 　　3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active 　　4.Ie z-index问题 给父级添加position:relative 　　5.Png 透明 使用js代码 改 　　6.Min-height 最小高度 !Important 解决’ 　　7.select 在ie6下遮盖 使用iframe嵌套 　　8.为什么没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px) 　　9.ie 6 不支持!important
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>9.img标签上title与alt属性的区别是什么?</h4>
+            </div>
+            <div class="panel-body">Alt 当图片不显示是 用文字代表。 　　Title 为该属性提供信息
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>10.描述css reset的作用和用途。描述一个"reset"的CSS文件并如何使用它。知道normalize.css吗？你了解他们的不同之处？　</h4>
+            </div>
+            <div class="panel-body">Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一.重置样式非常多，凡是一个前端开发人员肯定有一个常用的重置CSS文件并知道如何使用它们。他们是盲目的在做还是知道为什么这么做呢？原因是不同的浏览器对一些元素有不同的默认样式，如果你不处理，在不同的浏览器下会存在必要的风险，或者更有戏剧性的性发生。 　　你可能会用Normalize来代替你的重置样式文件。它没有重置所有的样式风格，但仅提供了一套合理的默认样式值。既能让众多浏览器达到一致和合理，但又不扰乱其他的东西（如粗体的标题）。 在这一方面，无法做每一个复位重置。它也确实有些超过一个重置，它处理了你永远都不用考虑的怪癖，像HTML的audio元素不一致或line-height不一致。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>11.解释css sprites，如何使用。</h4>
+            </div>
+            <div class="panel-body">Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>12.浏览器标准模式和怪异模式之间的区别是什么?</h4>
+            </div>
+            <div class="panel-body">盒子模型 渲染模式的不同 　　使用 window.top.document.compatMode 可显示为什么模式
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>13.什么是语义化的HTML?</h4>
+            </div>
+            <div class="panel-body">直观的认识标签 对于搜索引擎的抓取有好处。去掉或样式丢失的时候能让页面呈现清晰的结构： html本身是没有表现的，我们看到例如 &lt;h1&gt;是粗体，字体大小2em，加粗；&lt;strong&gt;是加粗的，不要认为这是html的表现，这些其实html默认的css样式在起作用，所以去掉或样式丢失的时候能让页面呈现清晰的结构不是语义化的HTML结构的优点，但是浏览器都有有默认样式，默认样式的目的也是为了更好的表达html的语义，可以说浏览器的默认样式和语义化的HTML结构是不可分割的。屏幕阅读器（如果访客有视障）会完全根据你的标记来“读”你的网页.例如,如果你使用的含语义的标记,屏幕阅读器就会“逐个拼出”你的单词,而不是试着去对它完整发音PDA、手机等设备可能无法像普通电脑的浏览器一样来渲染网页（通常是因为这些设备对CSS的支持较弱）使用语义标记可以确保这些设备以一种有意义的方式来渲染网页.理想情况下,观看设备的任务是符合设备本身的条件来渲染网页.语义标记为设备提供了所需的相关信息,就省去了你自己去考虑所有可能的显示情况（包括现有的或者将来新的设备）.例如,一部手机可以选择使一段标记了标题的文字以粗体显示.而掌上电脑可能会以比较大的字体来显示.无论哪种方式一旦你对文本标记为标题,您就可以确信读取设备将根据其自身的条件来合适地显示页面.搜索引擎的爬虫也依赖于标记来确定上下文和各个关键字的权重过去你可能还没有考虑搜索引擎的爬虫也是网站的“访客”,但现在它们他们实际上是极其宝贵的用户.没有他们的话,搜索引擎将无法索引你的网站,然后一般用户将很难过来访问.你的页面是否对爬虫容易理解非常重要,因为爬虫很大程度上会忽略用于表现的标记,而只注重语义标记.因此,如果页面文件的标题被标记,而不是,那么这个页面在搜索结果的位置可能会比较靠后.除了提升易用性外,语义标记有利于正确使用CSS和JavaScript,因为其本身提供了许多“钩钩”来应用页面的样式与行为.SEO主要还是靠你网站的内容和外部链接的。便于团队开发和维护W3C给我们定了一个很好的标准，在团队中大家都遵循这个标准，可以减少很多差异化的东西，方便开发和维护，提高开发效率，甚至实现模块化开发。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>14.清除浮动的几种方式，各自的优缺点</h4>
+            </div>
+            <div class="panel-body">
+                <ol>
+                    <li>使用空标签清除浮动 clear:both(理论上能清楚任何标签，增加无意义的标签)</li>
+                    <li>使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)</li>
+                    <li>是用afert伪元素清除浮动(用于非IE浏览器)</li>
+                </ol>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>15.css hack  什么是Css Hack？ie6,7,8的hack分别是什么？</h4>
+            </div>
+            <div class="panel-body">
+                &lt;!--[if IE 6]--&gt; &lt;![end if]--&gt; _marging \\IE 6 　　+margin \\IE 7 　　Marging:0 auto \9 所有Ie 　　Margin \0 \\IE 8 答案：针对不同的浏览器写不同的CSS code的过程，就是CSS hack。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>16.img的alt与title有何异同？strong与em的异同？</h4>
+            </div>
+            <div class="panel-body">alt(alt text):为不能显示图像、窗体或applets的用户代理（UA），alt属性用来指定替换文字。替换文字的语言由lang属性指定。(在IE浏览器下会在没有title时把alt当成 tool tip显示) •title(tool tip):该属性为设置该属性的元素提供建议性的信息。 strong:粗体强调标签，强调，表示内容的重要性 •em:斜体强调标签，更强烈强调，表示内容的强调点
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>17.简述一下src与href的区别。</h4>
+            </div>
+            <div class="panel-body">src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。 　　src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。
+                <script src="js.js"></script>
+                当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。 　　href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，如果我们在文档中添加
+                <link href="common.css" rel="stylesheet" /> 　　那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>18.知道的网页制作会用到的图片格式有哪些？</h4>
+            </div>
+            <div class="panel-body">png-8，png-24，jpeg，gif，svg。 　　但是上面的那些都不是面试官想要的最后答案。面试官希望听到是Webp,Apng。（是否有关注新技术，新鲜事物） 　　科普一下Webp：WebP格式，谷歌（google）开发的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器带宽资源和数据空间。Facebook Ebay等知名网站已经开始测试并使用WebP格式。 　　在质量相同的情况下，WebP格式图像的体积要比JPEG格式图像小40%。 Apng：全称是“Animated Portable Network Graphics”, 是PNG的位图动画扩展，可以实现png格式的动态图片效果。04年诞生，但一直得不到各大浏览器厂商的支持，直到日前得到 iOS safari 8的支持，有望代替GIF成为下一代动态图标准。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>19.一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。</h4>
+            </div>
+            <div class="panel-body">图片懒加载，在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。 如果为幻灯片、相册等，可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。 如果图片为css图片，可以使用CSSsprite，SVGsprite，Iconfont、Base64等技术。 如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的特别厉害的缩略图，以提高用户体验。 如果图片展示区域小于图片的真实大小，则因在服务器端根据业务需要先行进行图片压缩，图片压缩后大小与展示一致。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>20.CSS中可以通过哪些属性定义，使得一个DOM元素不显示在浏览器可视范围内？</h4>
+            </div>
+            <div class="panel-body">最基本的： 设置display属性为none，或者设置visibility属性为hidden 技巧性： 设置宽高为0，设置透明度为0，设置z-index位置在-1000
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>21.超链接访问过后hover样式就不出现的问题是什么？如何解决？</h4>
+            </div>
+            <div class="panel-body">答案：被点击访问过的超链接样式不在具有hover和active了,解决方法是改变CSS属性的排列顺序: L-V-H-A（link,visited,hover,active）
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>22.请用Css写一个简单的幻灯片效果页面 </h4>
+            </div>
+            <div class="panel-body">答案：知道是要用css3。使用animation动画实现一个简单的幻灯片效果。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>23.什么是外边距重叠？重叠的结果是什么？</h4>
+            </div>
+            <div class="panel-body">答案： 外边距重叠就是margin-collapse。 在CSS当中，相邻的两个盒子（可能是兄弟关系也可能是祖先关系）的外边距可以结合成一个单独的外边距。这种合并外边距的方式被称为折叠，并且因而所结合成的外边距称为折叠外边距。 折叠结果遵循下列计算规则： 1.两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。 2.两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。 3.两个外边距一正一负时，折叠结果是两者的相加的和。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>24.rgba()和opacity的透明效果有什么不同？</h4>
+            </div>
+            <div class="panel-body">rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于元素，以及元素内的所有内容的透明度， 而rgba()只作用于元素的颜色或其背景色。（设置rgba透明的元素的子元素不会继承透明效果！）
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>25.css中可以让文字在垂直和水平方向上重叠的两个属性是什么？</h4>
+            </div>
+            <div class="panel-body">垂直方向：line-height 水平方向：letter-spacing 那么问题来了，关于letter-spacing的妙用知道有哪些么？ 答案:可以用于消除inline-block元素间的换行符空格间隙问题。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>26.px和em的区别。 </h4>
+            </div>
+            <div class="panel-body">px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。 　　浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em。
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>27.display:none与visibility:hidden的区别是什么？</h4>
+            </div>
+            <div class="panel-body">•display : 隐藏对应的元素但不挤占该元素原来的空间。 •visibility: 隐藏对应的元素并且挤占该元素原来的空间。 　　即是，使用CSS display:none属性后，HTML元素（对象）的宽度、高度等各种属性值都将“丢失”;而使用visibility:hidden属性后，HTML元素（对象）仅仅是在视觉上看不见（完全透明），而它所占据的空间位置仍然存在。
+            </div>
+        </div>
+        <!-- css 部分 end -->
+    </div>
+    <!-- container end -->
+</body>
+
+</html>

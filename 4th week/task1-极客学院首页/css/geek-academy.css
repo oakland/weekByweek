@@ -150,12 +150,35 @@ li.useroperation {
     overflow: hidden;
 }
 .mainbody .introduction-area-left {
+	position: relative;
 	float: left;
 	width: 200px;
 	height: 305px;
 	border: 1px solid #E4E4E4;
 	border-top: 2px solid #35b558;
+	/*overflow: hidden;*/
 }
+.mainbody .introduction-area-left:hover {
+    position: absolute;
+}
+/*!!!!????????????????????????????????????????????????????????????????????????????????!!!!!!!*/
+div.absolute {
+	width: 500px;
+	height: 100px;
+	background: red;
+	border: 1px solid #E4E4E4;
+	position: absolute;
+	right: -500px;
+	top: 0px;
+	visibility: hidden;
+}
+div.absolute:hover {
+	visibility: visible;
+}
+.introduction-area-left li#mobildev:hover+div.absolute {
+	visibility: visible;
+}
+/*!!!!????????????????????????????????????????????????????????????????????????????????!!!!!!!*/
 .introduction-area-left ul{
     margin: 0;
     padding: 0;
@@ -234,10 +257,12 @@ div.introduction-area-right-text-top,div.introduction-area-right-text-bottom {
 	line-height: 15px;
 	margin: 0 0 17px;
 }
-.introduction-area-right-text p.button{
+.introduction-area-right-text button{
+	width: 140px;
+	height: 34px;
 	margin: 0 0 16px;
-	width: 100%;
 	display: inline-block;
+	border: none;
 	color: #FFF;
 	font-size: 14px;
 	font-weight: bold;
@@ -245,7 +270,12 @@ div.introduction-area-right-text-top,div.introduction-area-right-text-bottom {
 	background: #35b558;
 }
 div.introduction-area-right-text-bottom {
+	height: 136px;
 	padding: 10px;
+	border-bottom: 0;
+}
+div.introduction-area-right-text-bottom button{
+	margin-top: 0px;
 }
 div.display-area {
 	overflow: hidden;
@@ -276,6 +306,9 @@ div.lesson-box{
     height: 220px;
     margin: 0 15px 15px 0;
     overflow: hidden;
+}
+div.lesson-box:hover {
+    border: 1px solid #35b558;
 }
 img.lesson-box-img{
 	width: 233px;
@@ -642,7 +675,11 @@ div.contactus p{
 	margin-top: -18px;
 }
 /*=====================footer end=========================*/
-
+a#backtotop{
+	position: fixed;
+	top: 100px;
+	right: 10px;
+}
 
 
 
