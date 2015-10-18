@@ -177,12 +177,19 @@ div#userinfo-wrap a:before {
 }
 
 div#navs {
-	width: 90%;
+	/*width: 90%;*/
     margin: 1em auto;
+    overflow: hidden;
+    text-align: center;
 }
 
+div#navs a:first-child {
+    margin-left: 2%;
+}
+div#navs a:last-child {
+    margin-right: 2%;
+}
 div#navs a {
-	padding-left: 0.3em;
     display: inline-block;
     width: 14%;
     text-decoration: none;

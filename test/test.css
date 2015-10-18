@@ -228,11 +228,10 @@ div.inner {
 
 /*==========================分割线================================*/
 .container {
-    width: 100px;
-    height: 100px;
-    border: 10px solid black;
-    background: orange;
-    border-radius: 50%;
-    outline: 200px dashed red;
+    width: 110px;
+    /*text-align: center;*/
+    background: yellowgreen;
+    margin: 0 auto;
 }
+
 
