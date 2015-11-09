@@ -6,7 +6,7 @@ function classify() {
         case (scoreinput == null):
             alert("请输入数字1-100");
             break;
-        case (typeof scoreinput !== Number):
+        case (isNaN(scoreinput)):
             alert("请输入1-100的数字");
             break;
         case (scoreinput < 0 || scoreinput > 100):

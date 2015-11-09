@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>simple calculator</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="num1" id="num1">
+        <select id="oper">
+            <option value="加" selected>加</option>
+            <option value="减">减</option>
+            <option value="乘">乘</option>
+            <option value="除">除</option>
+        </select>
+        <input type="text" name="num2" id="num2">
+        <input type="button" value=" = " onclick="calculate(num1.value,num2.value,oper.value)">
+        <span id="result">??</span>
+    </form>
+    <script type="text/javascript" src=./main.js></script>
+</body>
+
+</html>

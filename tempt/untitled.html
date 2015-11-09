@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <p>JS计算器</p>
+    <p>快捷键：等于（回车）；清空（ESC）；小键盘</p>
+    <style>
+    .tdBtn input {
+        width: 50px;
+        font-weight: bold;
+        margin: 1px;
+        font-size: 16px;
+    }
+    
+    .tdExtBtn input {
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    </style>
+    <script type="text/javascript">
+    // <![CDATA[
+    function getObj(id) {
+        return document.getElementById(id);
+    }
+
+    function pageLoad() {
+        var inputs = document.getElementById('trCalc').getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type == 'button') {
+                inputs[i].onclick = btn_onclick;
+            }
+        }
+        getObj('txt').focus();
+        getObj('txt').value = '0';
+    }
+
+    function btn_onclick() {
+        var txt = getObj('txt');
+        showText(this.value);
+    }
+
+    function keyDown(evt) {
+        evt = evt || window.event;
+        switch (evt.keyCode) {
+            case 13:
+                showText('等于');
+                evt.returnValue = false;
+                break;
+            case 27:
+                showText('清空');
+                evt.returnValue = false;
+                break;
+            case 107:
+                showText('+');
+                evt.returnValue = false;
+                break;
+            case 109:
+                showText('-');
+                evt.returnValue = false;
+                break;
+            case 106:
+                showText('*');
+                evt.returnValue = false;
+                break;
+            case 111:
+                showText('/');
+                evt.returnValue = false;
+                break;
+            case 110:
+                showText('.');
+                evt.returnValue = false;
+                break;
+            default:
+                if (txt.value == '0') {
+                    txt.value = '';
+                }
+                break;
+        }
+    }
+
+    var value = 0;
+    var op = '';
+
+    function showText(str) {
+        var spanOp = getObj('spanOp');
+        if ('0123456789.'.indexOf(str) != -1) {
+            if (txt.value == '0') {
+                txt.value = '';
+            }
+            txt.value += str;
+            return;
+        }
+
+        if (str == '+/-') {
+            if (txt.value.indexOf('-') == 0) {
+                txt.value = txt.value.substr(1);
+            } else {
+                txt.value = '-' + txt.value;
+            }
+            return;
+        }
+
+        if ('+-*/'.indexOf(str) != -1) {
+            if (txt.value == '0' && str == '/') {
+                alert('除零错误！');
+                return;
+            }
+
+            eval('value ' + op + '= ' + txt.value);
+            txt.value = '0';
+            op = str;
+            spanOp.innerHTML = op;
+            return;
+        }
+
+        if (str == '等于' || str == '=') {
+            if (op != '') {
+                eval('value ' + op + '= ' + txt.value);
+                op = '';
+                spanOp.innerHTML = '';
+            }
+            txt.value = value;
+        }
+
+        if (str == '清空') {
+            txt.value = '0';
+            value = 0;
+            op = '';
+            spanOp.innerHTML = '';
+        }
+    }
+    // ]]>
+    </script>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <input id="txt" style="font-size: 23px; font-weight: bold; color: blue; text-align: right; ime-mode: disabled; width: 255px;" onkeydown="keyDown(event);" type="text" /> <span id="spanOp">&nbsp;</span></td>
+                </tr>
+                <tr id="trCalc">
+                    <td class="tdBtn">
+                        <input type="button" value="7" />
+                        <input type="button" value="8" />
+                        <input type="button" value="9" />
+                        <input type="button" value="+" />
+                        <br />
+                        <input type="button" value="4" />
+                        <input type="button" value="5" />
+                        <input type="button" value="6" />
+                        <input type="button" value="-" />
+                        <br />
+                        <input type="button" value="1" />
+                        <input type="button" value="2" />
+                        <input type="button" value="3" />
+                        <input type="button" value="*" />
+                        <br />
+                        <input type="button" value="0" />
+                        <input type="button" value="+/-" />
+                        <input type="button" value="." />
+                        <input type="button" value="/" />
+                    </td>
+                    <td class="tdExtBtn">
+                        <input type="button" value="清空" />
+                        <br />
+                        <input type="button" value="等于" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+    pageLoad();
+    </script>
+</body>
+
+</html>
