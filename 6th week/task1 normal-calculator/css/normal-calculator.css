@@ -24,6 +24,8 @@ div.background input#display {
     text-align: right;
     font-size: 40px;
     padding-right: 10px;
+    color: #2AA597;
+    box-shadow: 3px 3px 10px #555 inset;
 }
 
 div#oper {
@@ -82,7 +84,7 @@ div.line {
     font-size: 0;
 }
 
-span[class^=number] {
+span[id^=number] {
     display: inline-block;
     width: 89px;
     height: 65px;
@@ -94,15 +96,15 @@ span[class^=number] {
     background: #FFEBCD;
     cursor: pointer;
 }
-span[class^=number]:hover{
+span[id^=number]:hover{
 	background: #FFF8DC;
 }
-span.number0 {
+span#number0 {
     width: 179px;
     border-bottom-left-radius: 13px;
 }
 
-span[class^=operator] {
+span[id^=operator] {
     display: inline-block;
     width: 89px;
     height: 65px;
@@ -114,9 +116,9 @@ span[class^=operator] {
     background: #f5f5f5;
     cursor: pointer;
 }
-span[class^=operator]:hover{
+span[id^=operator]:hover{
 	background: #F0FFFF;
 }
-span.operator-plus {
+span#operator-plus {
     border-bottom-right-radius: 13px;
 }

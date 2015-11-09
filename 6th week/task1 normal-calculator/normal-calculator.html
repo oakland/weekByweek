@@ -10,34 +10,34 @@
 
 <body>
     <div class="background">
-        <input type="text" placeholder="0" id="display"></input>
+        <input type="text" id="display" value="0"></input>
         <div id="oper">
-            <button class="cancel">C</button>
-            <button class="equal">=</button>
+            <button class="cancel" onclick="cancel()" id="cancel" value="C">C</button>
+            <button class="equal" onclick="eq()" id="equal" value="=">=</button>
         </div>
         <div id="keyboard">
             <div class="line">
-                <span class="number7" value="7">7</span>
-                <span class="number8" value="8">8</span>
-                <span class="number9" value="9">9</span>
-                <span class="operator-div" value="/">&divide;</span>
+                <span id="number7" value="7" onclick="add7()">7</span>
+                <span id="number8" value="8" onclick="add8()">8</span>
+                <span id="number9" value="9" onclick="add9()">9</span>
+                <span id="operator-div" value="/" onclick="div()">/</span>
             </div>
             <div class="line">
-                <span class="number4">4</span>
-                <span class="number5">5</span>
-                <span class="number6">6</span>
-                <span class="operator-times">&times;</span>
+                <span id="number4" value="4" onclick="add4()">4</span>
+                <span id="number5" value="5" onclick="add5()">5</span>
+                <span id="number6" value="6" onclick="add6()">6</span>
+                <span id="operator-multiply" onclick="multiply()">*</span>
             </div>
             <div class="line">
-                <span class="number1">1</span>
-                <span class="number2">2</span>
-                <span class="number3">3</span>
-                <span class="operator-minus">-</span>
+                <span id="number1" value="1" onclick="add1()">1</span>
+                <span id="number2" value="2" onclick="add2()">2</span>
+                <span id="number3" value="3" onclick="add3()">3</span>
+                <span id="operator-minus" onclick="minus()" value="-">-</span>
             </div>
             <div class="line">
-                <span class="number0">0</span>
-                <span class="numberdot">.</span>
-                <span class="operator-plus">+</span>
+                <span id="number0" value="0" onclick="add0()">0</span>
+                <span id="numberdot" onclick="adddot()" value=".">.</span>
+                <span id="operator-plus" onclick="plus()" value="+">+</span>
             </div>
         </div>
     </div>
