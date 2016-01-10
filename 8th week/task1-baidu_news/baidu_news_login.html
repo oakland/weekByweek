@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>baidu news login</title>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/baidu_news_login.css">
@@ -17,18 +18,19 @@
     </div>
     <!-- div.header end -->
     <div class="main">
+        <!-- <input type="button" value="test" id="test"> -->
         <form action="mysql.php" type="post">
             <label for="account" class="control-label">用户名：</label>
             <!-- <span class="glyphicon glyphicon-user"></span> -->
-            <input type="text" name="account" id="account" class="form-control" placeholder="admin">
+            <input type="text" name="account" id="account" class="form-control" placeholder="admin" />
             </br>
             <label for="password" class="control-label">密码：</label>
-            <input type="password" name="password" id="password" class="form-control" placeholder="123">
+            <input type="password" name="password" id="password" class="form-control" placeholder="123" />
             </br>
             <p class="help-block">请输入用户名和密码</p>
             <div class="row">
-                <input type="submit" value="登录" class="btn btn-primary col-md-3 col-md-offset-2" id="loginbtn">
-                <input type="reset" value="重置" class="btn btn-primary col-md-3 col-md-offset-2">
+                <input type="submit" value="登录" class="btn btn-primary col-md-3 col-md-offset-2" id="loginbtn" />
+                <input type="reset" value="重置" class="btn btn-primary col-md-3 col-md-offset-2" />
             </div>
         </form>
     </div>

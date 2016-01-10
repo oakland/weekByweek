@@ -5,7 +5,8 @@ $(document).ready(function() {
             url: 'mysql.php',
             type: 'POST',
             data: {
-                "state": 0
+                "state": 0//,
+                // "idamount":"3"
             },
             success: function(data) {
             	// console.log(data);

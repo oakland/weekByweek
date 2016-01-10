@@ -1,5 +1,15 @@
+
 footer {
 	/*width: 5%;*/
 	background: url(../images/logo_news_276_88.png) no-repeat center 37px;
 	background-size: 4%;
+}
+tr td {
+	word-break: break-all;
+}
+tr td:nth-child(1) {
+	width: 35%;
+}
+tr td:nth-child(2) {
+	width: 10%;
 }
