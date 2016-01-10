@@ -1,0 +1,53 @@
+body {
+	position: relative;
+	min-height: 600px;
+	min-width: 1000px;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../images/login-background.jpg) no-repeat;
+	background-size: cover;
+}
+div.header {
+	padding: 10px 0 10px 100px;
+	margin-top: 30px;
+	background: rgba(255,255,255,0.61);
+}
+div.header p {
+	margin: 0;
+	padding: 0;
+	color: #555;
+}
+div.header p.title {
+	padding-left: 80px;
+	width: 200px;
+	height: 32px;
+	background: green;
+	font-size: 15px;
+	line-height: 32px;
+	background: url(../images/logo_news_276_88.png) no-repeat 0 0;
+	background-size: 35%;
+}
+div.header p.engtitle {
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+div.main {
+	width: 400px;
+	padding: 25px;
+	border-radius: 20px;
+	/*height: 300px;*/
+	background: rgba(255,255,255,0.61);
+	margin: 120px auto 0;
+}
+div.main label {
+	font-size: 16px;
+}
+div.footer {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	color: #ddd;
+}

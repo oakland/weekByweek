@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>baidu news login</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/baidu_news_login.css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/baidu_news_login.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <p class="title">百度新闻管理系统</p>
+        <p class="engtitle">Admin System Of Baidu News</p>
+    </div>
+    <!-- div.header end -->
+    <div class="main">
+        <form action="mysql.php" type="post">
+            <label for="account" class="control-label">用户名：</label>
+            <!-- <span class="glyphicon glyphicon-user"></span> -->
+            <input type="text" name="account" id="account" class="form-control" placeholder="admin">
+            </br>
+            <label for="password" class="control-label">密码：</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="123">
+            </br>
+            <p class="help-block">请输入用户名和密码</p>
+            <div class="row">
+                <input type="submit" value="登录" class="btn btn-primary col-md-3 col-md-offset-2" id="loginbtn">
+                <input type="reset" value="重置" class="btn btn-primary col-md-3 col-md-offset-2">
+            </div>
+        </form>
+    </div>
+    <!-- div.main end -->
+    <div class="footer">
+        技术支持：百度网络技术股份有限公司
+    </div>
+    <!-- div.footer end -->
+</body>
+
+</html>

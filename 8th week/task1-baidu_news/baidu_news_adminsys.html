@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BD Admin System</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/baidu_news_adminsys.css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/baidu_news_adminsys.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="jumbotron">
+                <h3>百度新闻管理系统</h3>
+                <p class="text-primary">欢迎登陆百度新闻操作系统！</p>
+                <button type="button" class="btn btn-warning">退出系统</button>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">新闻列表</div>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr class="active">
+                                <th class="text-primary">url</th>
+                                <th class="text-primary">pic</th>
+                                <th class="text-primary">title</th>
+                                <th class="text-primary">content</th>
+                                <th class="text-primary">time</th>
+                                <th class="text-primary">topic</th>
+                                <th class="text-primary">id</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>http://m.baidu.com/news?fr=</td>
+                                <td>images/newspic/ns4.jpg</td>
+                                <td>习近平卡梅伦酒吧小酌吃炸鱼薯条</td>
+                                <td>卡梅伦帮习近平点了一杯Greene King IPA啤酒，外加一份炸鱼薯条。</td>
+                                <td>2015-10-23</td>
+                                <td>专题</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>http://m.baidu.com/news?fr=</td>
+                                <td>images/newspic/ns4.jpg</td>
+                                <td>习近平卡梅伦酒吧小酌吃炸鱼薯条</td>
+                                <td>卡梅伦帮习近平点了一杯Greene King IPA啤酒，外加一份炸鱼薯条。</td>
+                                <td>2015-10-23</td>
+                                <td>专题</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>http://m.baidu.com/news?fr=</td>
+                                <td>images/newspic/ns4.jpg</td>
+                                <td>习近平卡梅伦酒吧小酌吃炸鱼薯条</td>
+                                <td>卡梅伦帮习近平点了一杯Greene King IPA啤酒，外加一份炸鱼薯条。</td>
+                                <td>2015-10-23</td>
+                                <td>专题</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>http://m.baidu.com/news?fr=</td>
+                                <td>images/newspic/ns4.jpg</td>
+                                <td>习近平卡梅伦酒吧小酌吃炸鱼薯条</td>
+                                <td>卡梅伦帮习近平点了一杯Greene King IPA啤酒，外加一份炸鱼薯条。</td>
+                                <td>2015-10-23</td>
+                                <td>专题</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>http://m.baidu.com/news?fr=</td>
+                                <td>images/newspic/ns4.jpg</td>
+                                <td>习近平卡梅伦酒吧小酌吃炸鱼薯条</td>
+                                <td>卡梅伦帮习近平点了一杯Greene King IPA啤酒，外加一份炸鱼薯条。</td>
+                                <td>2015-10-23</td>
+                                <td>专题</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>http://m.baidu.com/news?fr=</td>
+                                <td>images/newspic/ns4.jpg</td>
+                                <td>习近平卡梅伦酒吧小酌吃炸鱼薯条</td>
+                                <td>卡梅伦帮习近平点了一杯Greene King IPA啤酒，外加一份炸鱼薯条。</td>
+                                <td>2015-10-23</td>
+                                <td>专题</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">录入管理</div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="url" class="text-primary">URL</label>
+                                <input type="text" class="form-control" id="url">
+                            </div>
+                            <div class="form-group">
+                                <label for="pic" class="text-primary">pic</label>
+                                <input type="text" class="form-control" id="pic">
+                            </div>
+                            <div class="form-group">
+                                <label for="title" class="text-primary">title</label>
+                                <input type="text" class="form-control" id="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="content" class="text-primary">content</label>
+                                <input type="text" class="form-control" id="content">
+                            </div>
+                            <div class="form-group">
+                                <label for="time" class="text-primary">time</label>
+                                <input type="text" class="form-control" id="time">
+                            </div>
+                            <div class="form-group">
+                                <label for="topic" class="text-primary">topic</label>
+                                <input type="text" class="form-control" id="topic">
+                            </div>
+                            <div class="form-group">
+                                <label for="id" class="text-primary">id</label>
+                                <input type="text" class="form-control" id="id">
+                            </div>
+                            <div class="btn-group btn-group-justified">
+                                <div class="btn-group">
+                                    <button type="submit" class="btn btn-warning">录入</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="submit" class="btn btn-warning">修改</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning">删除</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="reset" class="btn btn-warning">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mainbody container end -->
+    <footer class="text-center well">
+        百度信息技术股份有限公司
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
