@@ -14,6 +14,7 @@ $(document).ready(function() {
                     // console.log(data);
                     var afterparse = JSON.parse(data); //将后端传回来的json字符串解析成json格式
                     // console.log(afterparse[0].length);
+                    // console.log(afterparse[0].url);
                     for (var i = 0; i < afterparse.length; i++) {
                         url = afterparse[i].url;
                         pic = afterparse[i].pic;
@@ -21,14 +22,22 @@ $(document).ready(function() {
                         content = afterparse[i].content;
                         topic = afterparse[i].topic;
                         time = afterparse[i].time;
-                        id = afterparse[i].id;
-                        $("tbody tr").eq(i).children("td").eq(0).text(url);
-                        $("tbody tr").eq(i).children("td").eq(1).text(pic);
-                        $("tbody tr").eq(i).children("td").eq(2).text(title);
-                        $("tbody tr").eq(i).children("td").eq(3).text(content);
-                        $("tbody tr").eq(i).children("td").eq(4).text(topic);
-                        $("tbody tr").eq(i).children("td").eq(5).text(time);
-                        $("tbody tr").eq(i).children("td").eq(6).text(id);
+                        // id = afterparse[i].id; //id 在数据库中是自增且unique的，不应该由前台人员来进行操作。
+                        $("<tr></tr>").appendTo("tbody");
+                        var mytr = $("tbody tr").eq(i);
+                        $("<td></td>").text(url).appendTo(mytr);
+                        $("<td></td>").text(pic).appendTo(mytr);
+                        $("<td></td>").text(title).appendTo(mytr);
+                        $("<td></td>").text(content).appendTo(mytr);
+                        $("<td></td>").text(topic).appendTo(mytr);
+                        $("<td></td>").text(time).appendTo(mytr);
+                        // $("tbody tr").eq(i).children("td").eq(0).text(url);
+                        // $("tbody tr").eq(i).children("td").eq(1).text(pic);
+                        // $("tbody tr").eq(i).children("td").eq(2).text(title);
+                        // $("tbody tr").eq(i).children("td").eq(3).text(content);
+                        // $("tbody tr").eq(i).children("td").eq(4).text(topic);
+                        // $("tbody tr").eq(i).children("td").eq(5).text(time);
+                        // $("tbody tr").eq(i).children("td").eq(6).text(id);//id 在数据库中是自增且unique的，不应该由前台人员来进行操作。
                     };
                 },
                 error: function() {
