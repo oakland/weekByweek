@@ -27,6 +27,7 @@ $(document).ready(function() {
                         $("<td></td>").text(topic).appendTo(mytr);
                         $("<td></td>").text(id).appendTo(mytr);
                         $("<td></td>").text(i + 1).appendTo(mytr);
+                        $("<td></td>").html('<button type="submit" class="deletbtn btn btn-warning">删除</button><button type="submit" class="updatebtn btn btn-warning">修改</button>').appendTo(mytr);
                     };
                 },
                 error: function() {
@@ -39,7 +40,7 @@ $(document).ready(function() {
             var inputurl = $("input#url").val();
             var inputpic = $("input#pic").val();
             var inputtitle = $("input#title").val();
-            var inputcontent = $("input#content").val();
+            var inputcontent = $("textarea#content").val();
             var inputtime = $("input#time").val();
             var inputtopic = $("input#topic").val();
             e.preventDefault();
@@ -72,34 +73,34 @@ $(document).ready(function() {
             }); //insert ajax end
         }); //insert function end
         //删
-        $("#deletbtn").click(function(e) {
-            var inputid = $("input#id").val();
-            e.preventDefault();
-            // alert("test is ok");
-            if (inputid == "") {
-                alert("请输入id值")
-            } else {
-                $.ajax({
-                    url: "mysql.php",
-                    type: "POST",
-                    data: {
-                        "state": "3",
-                        "id": inputid
-                    },
-                    success: function(data) {
-                        if (data == "DELETE success!") {
-                            alert("删除成功!");
-                            window.location.href = window.location.href;
-                        } else {
-                            alert("删除失败，请联系后台人员")
-                        };
-                    },
-                    error: function() {
-                        alert("error!")
-                    }
-                }); //delete ajax end
-            }
-
+        $("td button.deletbtn").click(function() {
+            alert("test is ok");
+            // var r = confirm("确实要删除此行？");
+            // if (r == true) {
+            //     var mylength = $(this).parent().siblings().length;
+            //     alert(mylength);
+            //     // e.preventDefault();
+            //     // alert("test is ok");
+            //     // $.ajax({
+            //     //     url: "mysql.php",
+            //     //     type: "POST",
+            //     //     data: {
+            //     //         "state": "3",
+            //     //         "id": inputid
+            //     //     },
+            //     //     success: function(data) {
+            //     //         if (data == "DELETE success!") {
+            //     //             alert("删除成功!");
+            //     //             window.location.href = window.location.href;
+            //     //         } else {
+            //     //             alert("删除失败，请联系后台人员")
+            //     //         };
+            //     //     },
+            //     //     error: function() {
+            //     //         alert("error!")
+            //     //     }
+            //     // }); //delete ajax end
+            // };
         }); //delete function end
         //改
         $("#updatebtn").click(function(e) {
