@@ -13,3 +13,8 @@ tr td:nth-child(1) {
 tr td:nth-child(2) {
 	width: 10%;
 }
+textarea#content{
+	max-height: 200px;
+	max-width: 100%;
+	/*resize: none;*/
+}
