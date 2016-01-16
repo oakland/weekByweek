@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度一下，你就知道</title>
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv-printshiv.js"></script>  
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/baidu_index.css">
+    <link href="./img/favicon.ico" rel="shortcut icon">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <!-- wrapper start -->
+    <div class="wrapper">
+        <div class="head">
+            <!-- head start -->
+            <!-- header start -->
+            <header id="header">
+                <a href="http://www.hao123.com/" class="header_product">hao123</a>
+                <a href="http://news.baidu.com/" class="header_product">新闻</a>
+                <a href="http://map.baidu.com/" class="header_product">地图</a>
+                <a href="http://v.baidu.com/i" class="header_product">视频</a>
+                <a href="http://tieba.baidu.com/" class="header_product">贴吧</a>
+                <a href="#" class="header_login">登录</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="header_set">设置</a>
+                <a href="http://www.baidu.com/more/" class="more_product">更多产品</a>
+            </header>
+            <!-- header end -->
+            <!-- more product container start -->
+            <div id="more_container" style="display:none">
+                <p>更多产品</p>
+                <ul id="more_list">
+                    <li><a href="">音乐</a></li>
+                    <li><a href="">图片</a></li>
+                    <li><a href="">知道</a></li>
+                    <li><a href="">文库</a></li>
+                    <li><a href="">风云榜</a></li>
+                    <li><a href="">百度推广</a></li>
+                    <li><a href="">全部产品&gt;&gt;</a></li>
+                </ul>
+            </div>
+            <div id="setting" style="display:none">
+                <div class="trangle"><em class="trangle2"></em></div>
+                <ul id="setting_list">
+                    <li>搜索设置</li>
+                    <li>高级搜索</li>
+                    <li>关闭预测</li>
+                    <li>搜索历史</li>
+                </ul>
+            </div>
+            <!-- more product container end -->
+            <!-- main start -->
+            <div class="main">
+                <div class="lg">
+                    <img src="./img/bd_logo1.png" alt="baidu logo" />
+                </div>
+                <div class="searchbox">
+                    <div class="searchbox_wrapper">
+                        <input type="text" class="searchbox_text" autofocus/>
+                        <span class="voice"></span>
+                    </div>
+                    <span class="searchbox_button"><input type="submit" value="百度一下"/></span>
+                </div>
+            </div>
+            <!-- main end -->
+        </div>
+        <!-- head end -->
+    </div>
+    <!-- wrapper end -->
+    <div id="usercard">
+        <ul id="userlist">
+            <li><i class="card_setts"></i>我的关注</li>
+            <li>导航</li>
+            <li class="activeli">推荐</li>
+            <li>购物</li>
+            <li>视频</li>
+        </ul>
+        <div id="mycontent">
+            <div id="myinterests" data-id="100" class="mycontent">myinterests</div>
+            <!-- myinterest end -->
+            <div id="mynav" data-id="1" class="mycontent">
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <p>咨询信息</p>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <p>娱乐休闲</p>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <p>购物嗨淘</p>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item mynav_item_top">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                    <img src="./img/fanli_40794035.png" alt="" class="discount_logo">
+                    <p><a href="">最高返利3.54%</a></p>
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <p>生活周边</p>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+                <div class="mynav_item">
+                    <img src="./img/79f0f736afc3793140471ac3edc4b74543a91128.jpg" alt="">
+                </div>
+            </div>
+            <!-- mynav end -->
+            <div id="myrecmd" data-id="2" class="mycontent mycontentin">
+                <div class="myrecmdleft">
+                    <p class="tip"><i></i>以下信息根据您的兴趣推荐</p>
+                    <div class="ltor">
+                        <h2 class="h2wrap"><a href="">男子20年前受助一顿饭 成老板后拿百万支票报恩</a></h2>
+                        <a href=""><img src="./img/u=797350900,4004833625&fm=80.jpeg" alt=""></a>
+                        <p><a class="originweb" href="">网易新闻</a>&nbsp;&nbsp;11-21&nbsp;&nbsp;04:00</p>
+                    </div>
+                    <div class="ttod">
+                        <h2 class="h2norm"><a href="">跑车撞飞货车车轮 跑车副驾女子脸上被撞出洞</a></h2>
+                        <a href=""><img src="./img/u=1564323121,3021383818&fm=80.jpeg" alt=""></a>
+                        <a href=""><img src="./img/u=859163669,1264323415&fm=80.jpeg" alt=""></a>
+                        <a href=""><img src="./img/u=1604382021,2971295029&fm=80.jpeg" alt=""></a>
+                        <p><a class="originweb" href="">网易新闻</a>&nbsp;&nbsp;11-21&nbsp;&nbsp;04:00</p>
+                    </div>
+                </div>
+                <div class="myrecmdright">
+                    <p>实时热点 <span>换一换</span></p>
+                    <ul class="s-news-rank-content">
+                        <li class="news-meta-item"><a href="">收发室姐姐走红</a></li>
+                        <li class="news-meta-item"><a href="">女星自曝收不雅照</a></li>
+                        <li class="news-meta-item"><a href="">扛500斤硬币买房</a></li>
+                        <li class="news-meta-item"><a href="">孙俪大胆模仿金星</a></li>
+                        <li class="news-meta-item"><a href="">北京第五代公厕</a></li>
+                        <li class="news-meta-item"><a href="">南京挖出千斤神罐</a></li>
+                        <li class="news-meta-item"><a href="">猴年马月将临</a></li>
+                        <li class="news-meta-item"><a href="">拿百万支票报恩</a></li>
+                        <li class="news-meta-item"><a href="">北京将迎大雪</a></li>
+                        <li class="news-meta-item"><a href="">村官辞职办婚宴</a></li>
+                        <li class="news-meta-item"><a href="">女子疑夜跑被掐死</a></li>
+                        <li class="news-meta-item"><a href="">查出前夫出轨获赔</a></li>
+                        <li class="news-meta-item"><a href="">马里首都酒店遇袭</a></li>
+                        <li class="news-meta-item"><a href="">艺术家雪地画巨龙</a></li>
+                        <li class="news-meta-item"><a href="">员工位300元自杀</a></li>
+                        <li class="news-meta-item"><a href="">宋慧乔素颜曝光</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- myrecmd end -->
+            <div id="mybuy" data-id="5" class="mycontent">mybuy</div>
+            <!-- mybuy end -->
+            <div id="myvideo" data-id="15" class="mycontent">myvideo</div>
+            <!-- myvideo end -->
+        </div>
+        <!-- mycontent end -->
+    </div>
+    <!-- usercard end -->
+    <!-- footer start -->
+    <footer>
+        <div id="footer_content">
+            <p id="about">
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                <a href="http://home.baidu.com/">关于百度</a></li>
+                <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile">About Baidu</a>
+            </p>
+            <p id="info">
+                &copy;2015&nbsp;Baidu
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号
+                <i id="icon"></i>
+            </p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script type="text/javascript" src="./js/baiduindex.js"></script>
+</body>
+
+</html>

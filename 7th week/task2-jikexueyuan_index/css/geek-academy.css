@@ -1,0 +1,1048 @@
+body {
+    /*font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;*/
+    width: 100%;
+    min-width: 992px;
+}
+
+header {
+    width: 100%;
+    height: 103px;
+    box-shadow: 0px 4px 1px #f3f3f3;
+}
+
+#header-top {
+    width: 100%;
+    margin: 10px auto;
+    padding-bottom: 11px;
+    border-bottom: 2px solid #35b558;
+    overflow: hidden;
+}
+
+div.header-top-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+img.lg {
+    width: 113px;
+    height: 41px;
+    vertical-align: middle;
+    margin-right: 190px;
+}
+
+.search-box {
+    width: 362px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 13px;
+    outline: none;
+}
+
+button.searchbtn {
+    background: transparent;
+    background-image: url(../img/topsearch-icon_e1f5df2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 37px;
+    border: none;
+    border-left: 1px solid #dfdfdf;
+    margin-left: -44px;
+    outline: none;
+    vertical-align: middle;
+}
+
+button.searchbtn:hover {
+    background: #35b558;
+    background-image: url(../img/topsearch-icon2_8c8d8b0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#header-top ul {
+    display: inline-block;
+    /*float: left;*/
+}
+
+div#header-top ul.indicategroup {
+    position: relative;
+    left: -225px;
+}
+
+div#header-top ul.logingroup {
+    /*position: relative;*/
+    /*left: -225px;*/
+    margin-left: -115px;
+}
+
+li.indicate {
+    list-style-type: none;
+    /*float: left;*/
+    display: inline-block;
+    margin-right: 5px;
+}
+
+li.indicate a {
+    padding: 2px;
+    font-size: 12px;
+    font-family: arial;
+    background: #f3f3f3;
+    color: #808080;
+    text-decoration: none;
+}
+
+li.indicate a:hover {
+    background-color: #dfdfdf;
+    color: #333;
+}
+
+li.login {
+    list-style-type: none;
+    /*float: left;*/
+    display: inline-block;
+    margin-right: 5px;
+    padding: 1px;
+    font-size: 13px;
+}
+
+li.login a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+    padding-right: 15px;
+    border-right: 1px solid #333;
+}
+
+
+/*=====================headertop end=========================*/
+
+div#header-bottom {
+    width: 1000px;
+    margin: -12px auto;
+}
+
+ul.narbar {
+    margin-left: -40px;
+    float: left;
+}
+
+li.navitem {
+    list-style-type: none;
+    float: left;
+    /*display: inline-block;*/
+    margin-right: 45px;
+    padding: 1px;
+    font-size: 15px;
+    font-family: "Lantinghei SC";
+}
+
+li.navitem a,
+ul.userbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+li.navitem a:hover,
+ul.userbar a:hover {
+    text-decoration: none;
+    color: #35b558;
+}
+
+ul.userbar {
+    /*margin-left: 20px;*/
+    float: right;
+}
+
+li.useroperation {
+    list-style-type: none;
+    float: left;
+    /*display: inline-block;*/
+    margin-right: 50px;
+    padding: 1px;
+    font-size: 13px;
+}
+
+
+/*=====================headerbottom end=========================*/
+
+
+/*=====================header end=========================*/
+
+.mainbody {
+    position: relative;
+    width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+div.backtotop {
+    position: fixed;
+    right: 100px;
+    top: 460px;
+    cursor: pointer;
+}
+div.backtotop span.gotoparrow{
+    background: url(../img/gotop_d19051b.jpg) no-repeat;
+    background-size: cover;
+}
+div.backtotop span.phone{
+    background: url(../img/phone-1_b9a83cb.png) no-repeat center;
+    background-size: 40%;
+}
+span.phone span.jkQRcode{
+    display: none;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    left: -126px;
+    bottom: -55px;
+    background: url(../img/appewm_72cb766.png) no-repeat;
+    background-size: cover;
+}
+span.phone:hover span.jkQRcode{
+    display: block;
+}
+div.backtotop span.phone:hover{
+    background: url(../img/phone-2_3e87776.png) no-repeat center;
+    background-size: 40%;
+    background-color: #f7f7f7;
+}
+div.backtotop span.research{
+    background: url(../img/gotop_d19051b.jpg) no-repeat 0 -68px;
+    background-size: cover;
+    border-bottom: 1px solid #e0e0e0;
+}
+div.backtotop span.clientservice{
+    background: url(../img/kefu_8edc734copy.png) no-repeat center;
+    background-size: 60%;
+}
+
+div.backtotop span.gotoparrow,div.backtotop span.phone,div.backtotop span.research,div.backtotop span.clientservice{
+    position: relative;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: #f7f7f7;
+}
+span.clientservice span.servicetime{
+    display: none;
+    width: 155px;
+    height: 40px;
+    border-radius: 3px;
+    background: #f7f7f7;
+    position: absolute;
+    left: -165px;
+    top: -4px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    color: #666;
+    padding-top: 4px;
+}
+span.clientservice span.trangle{
+    display: none;
+    position: absolute;
+    left: -10px;
+    top: 7px;
+    border-left: 10px solid #f7f7f7;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+span.clientservice:hover span.servicetime,span.clientservice:hover span.trangle{
+    display: block;
+}
+.mainbody .introduction-area {
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.mainbody .introduction-area-left {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 305px;
+    border: 1px solid #E4E4E4;
+    border-top: 2px solid #35b558;
+    /*overflow: hidden;*/
+}
+
+.mainbody .introduction-area-left:hover {
+    position: absolute;
+}
+
+
+/*!!!!????????????????????????????????????????????????????????????????????????????????!!!!!!!*/
+
+div.absolute {
+    width: 500px;
+    height: 100px;
+    background: red;
+    border: 1px solid #E4E4E4;
+    position: absolute;
+    right: -500px;
+    top: 0px;
+    visibility: hidden;
+}
+
+div.absolute:hover {
+    visibility: visible;
+}
+
+/*!!!!????????????????????????????????????????????????????????????????????????????????!!!!!!!*/
+
+.introduction-area-left ul {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.introduction-area-left li {
+    list-style-type: none;
+    border-bottom: 1px solid #E4E4E4;
+    font: 13px "Lantinghei SC";
+    padding: 9px 0 10px 25px;
+    line-height: 17px;
+    background: url(../img/more-icon_d39346f.png) no-repeat;
+    background-position: 180px 12px;
+    background-size: 6px 10px;
+}
+
+.introduction-area-left li:hover {
+    z-index: 100;
+    margin-left: -2px;
+    cursor: pointer;
+    color: #35b558;
+    border-left: 2px solid #35b558;
+    border-right: 1px solid #fff;
+    background: transparent;
+}
+
+.introduction-area-left li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.introduction-area-left li:hover a {
+    color: #35b558;
+}
+
+div.mainbody div.introduction-area-right {
+    float: right;
+    margin-left: 10px;
+    width: 780px;
+    height: 305px;
+    vertical-align: top;
+}
+
+div.introduction-area-right-img {
+    position: relative;
+    width: 570px;
+    height: 305px;
+    float: left;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+div.introduction-area-right-img div.bannerbox {
+    width: 10000px;
+    position: relative;
+    font-size: 0;
+}
+
+div.introduction-area-right-img div.arrowbox {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    /*margin-top: -7px;*/
+}
+
+div.introduction-area-right-img:hover .arrowbox {
+    display: block;
+}
+
+div.introduction-area-right-img .arrowbox span.prev {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background: url(../img/banner-left_fe0df34.png) no-repeat -15px 0;
+    position: absolute;
+    left: 0;
+    margin-top: -30px;
+}
+
+div.introduction-area-right-img .arrowbox span.prev:hover {
+    background: url(../img/banner-left_fe0df34.png) no-repeat -15px -60px;
+}
+
+div.introduction-area-right-img .arrowbox span.next {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background: url(../img/banner-right_a0bdd7d.png) no-repeat -15px 0;
+    position: absolute;
+    right: 0;
+    margin-top: -30px;
+}
+
+div.introduction-area-right-img .arrowbox span.next:hover {
+    background: url(../img/banner-right_a0bdd7d.png) no-repeat -15px -60px;
+}
+
+div.introduction-area-right-img img.bannerimg {
+    position: relative;
+}
+
+div.introduction-area-right-img div.indexbox {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+div.introduction-area-right-img .indexbtn {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 32px;
+    height: 3px;
+    background: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+div.introduction-area-right-img span.activeindex {
+    background: #35b558;
+}
+
+div.introduction-area-right-text {
+    float: left;
+    vertical-align: top;
+    border: 1px solid #E4E4E4;
+    overflow: hidden;
+}
+
+div.introduction-area-right-text-top,
+div.introduction-area-right-text-bottom {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.introduction-area-right-text a {
+    text-decoration: none;
+}
+
+.introduction-area-right-text a:hover {
+    cursor: pointer;
+}
+
+.introduction-area-right-text h4 {
+    color: #808080;
+    margin: 0 0 18px;
+}
+
+.introduction-area-right-text p {
+    color: #35b558;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 17px;
+}
+
+.introduction-area-right-text button {
+    width: 140px;
+    height: 34px;
+    margin: 0 0 16px;
+    display: inline-block;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    background: #35b558;
+}
+
+div.introduction-area-right-text-bottom {
+    height: 136px;
+    padding: 10px;
+    border-bottom: 0;
+}
+
+div.introduction-area-right-text-bottom button {
+    margin-top: 0px;
+}
+
+div.display-area {
+    overflow: hidden;
+}
+
+div.display-area ul.lesson-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+div.display-area ul.lesson-list li {
+    float: left;
+    padding-bottom: 10px;
+    width: 166px;
+    list-style-type: none;
+    text-align: center;
+    font: 15px "Lantinghei SC";
+    cursor: pointer;
+}
+
+div.display-area ul.lesson-list li:hover {
+    color: #35b558;
+}
+
+div.lesson-box {
+    float: left;
+    border: 1px solid #E4E4E4;
+    width: 233px;
+    height: 220px;
+    margin: 0 15px 15px 0;
+    overflow: hidden;
+}
+
+div.lesson-box:hover {
+    border: 1px solid #35b558;
+}
+
+img.lesson-box-img {
+    width: 233px;
+    height: 130px;
+}
+
+h4.heading4 {
+    margin: 10px 0 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+p.shallowgray {
+    display: inline-block;
+    padding: 0 28px;
+    font: 12px "Lantinghei SC";
+    color: #808080;
+    background: url(../img/clok_a413ecf.png) no-repeat;
+    background-size: 14px 14px;
+    background-position: 10px;
+}
+
+div.lesson-box img.android {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 70px;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    border: transparent;
+    background: url(../img/54578d8e652c3.png) no-repeat;
+    background-size: 16px 16px;
+}
+
+.practice-path-area {
+    overflow: hidden;
+}
+
+.practice-path-area h3 {
+    float: left;
+}
+
+.practice-path-area>p {
+    float: right;
+}
+
+.practice-path-area a {
+    text-decoration: none;
+    color: #000;
+}
+
+i.circle {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: gray;
+    font: 12px arial;
+    color: #fff;
+    text-align: center;
+}
+
+.practice-path-itemcontainer {
+    margin-top: 55px;
+    width: 100%;
+    overflow: hidden;
+    /*border: 1px solid #e4e4e4;*/
+    /*border-left: 0;*/
+}
+
+.practice-path-item {
+    float: left;
+    width: 198px;
+    height: 340px;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+}
+
+.practice-path-item:hover {
+    z-index: 100;
+    border: 1px solid #35b558;
+}
+
+.practice-path-item:hover button {
+    color: #FFF;
+    background-color: #35b558;
+}
+
+.practice-path-item img {
+    width: 198px;
+    height: 120px;
+}
+
+.practice-path-item h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.practice-path-item p {
+    margin-top: 20px;
+    font: 12px "Lantinghei SC";
+    color: #808080;
+    text-align: center;
+}
+
+button.greenbtn2 {
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+    width: 140px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #35b558;
+    background: #f3fff6;
+    color: #35b558;
+    outline: none;
+    transition: 0.8s;
+}
+
+.knowledge-system-area {
+    overflow: hidden;
+}
+
+.knowledge-system-area h3 {
+    float: left;
+}
+
+.knowledge-system-area>p {
+    float: right;
+}
+
+.knowledge-system-area a {
+    text-decoration: none;
+    color: #000;
+}
+
+.knowledge-system-item {
+    width: 164px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    float: left;
+    cursor: pointer;
+}
+
+.knowledge-system-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.knowledge-system-item img {
+    width: 40px;
+    height: 40px;
+    margin: 15px 62px 5px 62px;
+    text-align: center;
+}
+
+.knowledge-system-item h4 {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.knowledge-system-item p {
+    font-size: 13px;
+    margin: 5px auto;
+    text-align: center;
+    color: #35b558;
+}
+
+div.cardbox {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+div.knowledge-system-item:hover div.cardbox {
+    transform: rotateY(180deg);
+}
+
+div.front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+}
+
+div.back {
+	background: #E4E4E4;
+    width: 164px;
+    height: 90px;
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+div.back p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+div.back button {
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background: #35b558;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+
+.coorperation-enterprise {
+    overflow: hidden;
+}
+
+.coorperation-enterprise h3 {
+    float: left;
+}
+
+.coorperation-enterprise>p {
+    float: right;
+}
+
+.coorperation-enterprise a {
+    text-decoration: none;
+    color: #000;
+}
+
+.enterprise-item-container {
+	position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.enterprise-item-container div.arrowbox {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -20px;
+}
+
+.enterprise-item-container:hover .arrowbox {
+    display: block;
+}
+
+.enterprise-item-container .arrowbox span.prev {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background: url(../img/banner-left_fe0df34.png) no-repeat -15px 0;
+    position: absolute;
+    left: 0;
+}
+
+.enterprise-item-container .arrowbox span.prev:hover {
+    background: url(../img/banner-left_fe0df34.png) no-repeat -15px -60px;
+}
+
+.enterprise-item-container .arrowbox span.next {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background: url(../img/banner-right_a0bdd7d.png) no-repeat -15px 0;
+    position: absolute;
+    right: 0;
+}
+
+.enterprise-item-container .arrowbox span.next:hover {
+    background: url(../img/banner-right_a0bdd7d.png) no-repeat -15px -60px;
+}
+.enterprise-item {
+    float: left;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #E4E4E4;
+    margin-right: 7px;
+    overflow: hidden;
+}
+
+.coorperation-university {
+    overflow: hidden;
+}
+
+.coorperation-university h3 {
+    float: left;
+}
+
+.coorperation-university>p {
+    float: right;
+}
+
+.coorperation-university a {
+    text-decoration: none;
+    color: #000;
+}
+
+.university-item-container {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    padding: 20px 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.university-item {
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-right: 24px;
+    overflow: hidden;
+}
+
+.university-item img {
+    width: 110px;
+    height: 110px;
+}
+
+.media-show {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.media-show h3 {
+    float: left;
+}
+
+.media-show>p {
+    float: right;
+}
+
+.media-show a {
+    text-decoration: none;
+    color: #000;
+}
+
+.media-item-container {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.media-item {
+    float: left;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #E4E4E4;
+    margin-right: 7px;
+    overflow: hidden;
+}
+
+
+/*=====================mainbody end=========================*/
+
+footer div.footer-top {
+    width: 100%;
+    background-color: #FAFAFA;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+div.footer-top-container {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+div.footer-top-container ul {
+    vertical-align: top;
+    margin-right: 60px;
+    border-left: 1px solid #E4E4E4;
+    color: #808080;
+    font: 14px "Lantinghei SC";
+    /*float: left;*/
+    display: inline-block;
+}
+
+div.footer-top-container ul a {
+    line-height: 28px;
+    text-decoration: none;
+    color: #808080;
+}
+
+div.footer-top-container ul a:hover {
+    cursor: pointer;
+    color: #35b558;
+}
+
+div.footer-top-container ul li {
+    font: 12px "Lantinghei SC";
+    /*list-style-type: none;*/
+    line-height: 28px;
+}
+
+div.footer-top-container ul li a {
+    text-decoration: none;
+}
+
+div.footer-top-container ul li a:hover {
+    cursor: pointer;
+    color: #35b558;
+}
+
+div.contact {
+    display: inline-block;
+    border-left: 1px solid #E4E4E4;
+    margin-top: -10px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+div.contact p {
+    font: 16px "Lantinghei SC";
+    color: #35b558;
+}
+
+div.app {
+    display: inline-block;
+    background: url(../img/iphone_ecb3977.png);
+    background-size: 22px 40px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 35px;
+}
+
+div.app a {
+    text-decoration: none;
+}
+
+div.app a:hover {
+    color: #35b558;
+}
+
+div.app strong {
+    font: 18px "Lantinghei SC";
+    font-weight: bold;
+    line-height: 18px;
+    color: #666;
+}
+
+div.app p {
+    font: 14px "Lantinghei SC";
+    color: #666;
+    margin-top: 10px;
+}
+
+a.media-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/icon_7f8b929.png);
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+a.media-icon1 {
+    background-position: -23px 0;
+}
+
+a.media-icon1:hover {
+    background-position: -23px -40px;
+}
+
+a.media-icon2 {
+    background-position: -144px 0;
+}
+
+a.media-icon2:hover {
+    background-position: -144px -40px;
+}
+
+a.media-icon3 {
+    background-position: -23px -82px;
+}
+
+a.media-icon3:hover {
+    background-position: -23px -122px;
+}
+
+div.contactus {
+    margin-top: 5px;
+    background: url(../img/kefu_8edc734copy.png) no-repeat;
+    background-size: 40px 40px;
+    padding-left: 50px;
+}
+
+div.contactus a {
+    text-decoration: none;
+}
+
+div.contactus a:hover {
+    cursor: pointer;
+    color: #35b558;
+}
+
+div.contactus h4 {
+    color: #666;
+    font: 16px "Lantinghei SC";
+}
+
+div.contactus p {
+    color: #666;
+    font: 12px "Lantinghei SC";
+    margin-top: -18px;
+}
+
+
+/*=====================footer end=========================*/
+
+a#backtotop {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}

@@ -1,0 +1,19 @@
+.box {
+	position: relative;
+	float: left;
+}
+.content{
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #999;
+	box-shadow: 0 0 5px #999;
+	border-radius: 10px;
+}
+.content img{
+	width: 220px;
+	height: auto;
+}
+.content p{
+	color: #999;
+	text-align: center;
+}

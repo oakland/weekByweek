@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>geek-academy</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/geek-academy.css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header-top">
+            <div class="header-top-container">
+                <a href="#http://www.jikexueyuan.com"><img src="./img/logo_c8caff4.png" alt="极客学院" class="lg"></a>
+                <input type="text" name="" id="search-box" placeholder="搜索课程、问答或wiki" class="search-box">
+                <button class="searchbtn"></button>
+                <ul class="indicategroup">
+                    <li class="indicate">
+                        <a href="">Android</a>
+                    </li>
+                    <li class="indicate">
+                        <a href="">IOS</a>
+                    </li>
+                    <li class="indicate">
+                        <a href="">HTML5</a>
+                    </li>
+                </ul>
+                <ul class="logingroup">
+                    <li class="login">
+                        <a href="">QQ登录</a>
+                    </li>
+                    <li class="login">
+                        <a href="">登录</a>
+                    </li>
+                    <li class="login">
+                        <a href="">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- headertop end -->
+        <div id="header-bottom">
+            <ul class="narbar">
+                <li class="navitem"><a href="">首页</a></li>
+                <li class="navitem"><a href="">职业课程库</a></li>
+                <li class="navitem"><a href="">知识体系图</a></li>
+                <li class="navitem"><a href="">实战路径图</a></li>
+                <li class="navitem"><a href="">技术问答</a></li>
+                <li class="navitem"><a href="">Wiki</a></li>
+            </ul>
+            <ul class="userbar">
+                <li class="useroperation"><img src="./img/vip-icon_76ae754.png" alt="VIP"><a href="">VIP会员</a></li>
+                <li class="useroperation"><img src="./img/star-icon_c593bc1.png" alt="课程"><a href="">求课程</a></li>
+                <li class="useroperation"><img src="./img/dl-icon_4bc18a7.png" alt="客户端"><a href="">客户端</a></li>
+            </ul>
+        </div>
+        <!-- headerbottom end -->
+    </header>
+    <!-- header end -->
+    <div class="mainbody">
+        <div class="introduction-area">
+            <div class="introduction-area-left">
+                <ul>
+                    <li id="mobildev"><a href="">移动开发</a></li>
+                    <li><a href="">前端开发</a></li>
+                    <li><a href="">后端开发</a></li>
+                    <li><a href="">基础知识</a></li>
+                    <li><a href="">云计算&大数据</a></li>
+                    <li><a href="">智能硬件&物联网</a></li>
+                    <li><a href="">数据库</a></li>
+                    <li><a href="">认证考试</a></li>
+                    <li><a href="">企业 IT</a></li>
+                    <li><a href="">软件测试</a></li>
+                    <li><a href="">设计&产品</a></li>
+                </ul>
+            </div>
+            <div class="introduction-area-right">
+                <div class="introduction-area-right-img">
+                    <div class="bannerbox">
+                        <img class="bannerimg" src="./img/564c563f3b54e.jpg" alt="" style="width:570px">
+                        <img class="bannerimg" src="./img/56581cfb6e677.jpg" alt="" style="width:570px">
+                        <img class="bannerimg" src="./img/564c566a3b0a1.jpg" alt="" style="width:570px">
+                        <img class="bannerimg" src="./img/564c56584b225.jpg" alt="" style="width:570px">
+                        <img class="bannerimg" src="./img/5649bb3fc9d9b.jpg" alt="" style="width:570px">
+                        <img class="bannerimg" src="./img/564c563f3b54e.jpg" alt="" style="width:570px">
+                    </div>
+                    <div class="arrowbox">
+                        <span class="prev"></span>
+                        <span class="next"></span>
+                    </div>
+                    <div class="indexbox">
+                        <span class="indexbtn"></span>
+                        <span class="indexbtn"></span>
+                        <span class="indexbtn"></span>
+                        <span class="indexbtn"></span>
+                        <span class="indexbtn"></span>
+                    </div>
+                </div>
+                <div class="introduction-area-right-text">
+                    <div class="introduction-area-right-text-top">
+                        <a href="">
+                            <h4>极客学院 让学习更有效</h4>
+                            <p>最新|系统|实战</p>
+                            <button class="greenbtn1">了解极客学院</button>
+                        </a>
+                    </div>
+                    <div class="introduction-area-right-text-bottom">
+                        <a href="">
+                            <h4>成为VIP 极客启程</h4>
+                            <p>&radic;全部课程 &radic;高清视频</p>
+                            <p>&radic;问答服务 &radic;课程资料</p>
+                            <button class="greenbtn2">了解VIP权益</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- introduction-area end -->
+        <div class="display-area">
+            <ul class="lesson-list">
+                <li class="lesson-list-item">热门推荐</li>
+                <li class="lesson-list-item">最新课程</li>
+                <li class="lesson-list-item">免费课程</li>
+                <li class="lesson-list-item">项目实战</li>
+                <li class="lesson-list-item">全球首发</li>
+                <li class="lesson-list-item">企业合作</li>
+            </ul>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/55ff5ea422731.jpg" alt="">
+                <h4 class="heading4">Android 入门开发实战之汽车顾问</h4>
+                <p class="shallowgray">4课时 29分钟</p>
+                <img class="android">
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/56089c9be652a.jpg" alt="">
+                <h4 class="heading4">HDbase 入门</h4>
+                <p class="shallowgray">5课时 46分钟</p>
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/56039fdd7ecb7.jpg" alt="">
+                <h4 class="heading4">基于PARSE的实战项目开发之用户基础功能的搭建</h4>
+                <p class="shallowgray">5课时 82分钟</p>
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/56089bd38fe3c.jpg" alt="">
+                <h4 class="heading4">AJAX 通用代码与常见问题处理</h4>
+                <p class="shallowgray">5课时 84分钟</p>
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/560362fc8a7d5.jpg" alt="">
+                <h4 class="heading4">C++函数（1）</h4>
+                <p class="shallowgray">4课时 54分钟</p>
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/5603623545cbf.jpg" alt="">
+                <h4 class="heading4">Tomcat 安装</h4>
+                <p class="shallowgray">4课时 35分钟</p>
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/56020a66eef96.jpg" alt="">
+                <h4 class="heading4">Flask应用部署与运维</h4>
+                <p class="shallowgray">5课时 45分钟</p>
+            </div>
+            <div class="lesson-box">
+                <img class="lesson-box-img" src="./img/5600b07f2e6f7.jpg" alt="">
+                <h4 class="heading4">IOS设计模式--工厂</h4>
+                <p class="shallowgray">4课时 48分钟</p>
+            </div>
+        </div>
+        <!-- display-area end -->
+        <div class="practice-path-area">
+            <h3><a href="">实战路径图<i class="circle">?</i></a></h3>
+            <p><a href="">更多>></a></p>
+            <div class="practice-path-itemcontainer">
+                <div class="practice-path-item">
+                    <img src="./img/5615cd7d3e99f.png" alt="">
+                    <h4 class="heading4">WEB大前端工程师</h4>
+                    <p>月薪7K-30K</p>
+                    <p>WEB开发的未来趋势</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/560905e64a9d1.png" alt="">
+                    <h4 class="heading4">Android工程师</h4>
+                    <p>月薪5K-30K</p>
+                    <p>最火爆的职业 人才缺口大</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/56160c8b90692.png" alt="">
+                    <h4 class="heading4">IOS开发工程师</h4>
+                    <p>月薪6K-30K</p>
+                    <p>企业必争的人才资源</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/5616279756548.png" alt="">
+                    <h4 class="heading4">Java Web工程师</h4>
+                    <p>月薪6K-35K</p>
+                    <p>就业面最广的职业方向</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/56162481a1ed6.png" alt="">
+                    <h4 class="heading4">PHP工程师</h4>
+                    <p>月薪5K-35K</p>
+                    <p>最好的开发语言 没有之一</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/56163251dda94.png" alt="">
+                    <h4 class="heading4">Cocos2D工程师</h4>
+                    <p>月薪7K-30K</p>
+                    <p>最流行跨平台手机开发</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/56163d072d61d.png" alt="">
+                    <h4 class="heading4">Unity3D工程师</h4>
+                    <p>月薪7K-40K</p>
+                    <p>国际最热门的3D引擎</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/5617474782723.png" alt="">
+                    <h4 class="heading4">ASP.NET工程师</h4>
+                    <p>月薪5K-30K</p>
+                    <p>微软强力推行的开发语言</p>
+                    <button class="greenbtn2">立即学习</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/56174712902f7.png" alt="">
+                    <h4 class="heading4">大数据工程师</h4>
+                    <p>月薪8K-40K</p>
+                    <p>目前最稀缺的职业方向</p>
+                    <button class="greenbtn2">敬请期待</button>
+                </div>
+                <div class="practice-path-item">
+                    <img src="./img/561630f6d0d4c.png" alt="">
+                    <h4 class="heading4">运维工程师</h4>
+                    <p>月薪6K-30K</p>
+                    <p>最能折腾的职业岗位</p>
+                    <button class="greenbtn2">敬请期待</button>
+                </div>
+            </div>
+        </div>
+        <!-- practice-path-area end -->
+        <div class="knowledge-system-area">
+            <h3><a href="">知识体系图<i class="circle">?</i></a></h3>
+            <p><a href="">更多>></a></p>
+            <div class="knowledge-system-container">
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/android.png" alt="">
+                            <h4>Android</h4>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/Java.png" alt="">
+                            <h4>JAVA语言</h4>
+                            <p>40门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/html.png" alt="">
+                            <h4>HTML5开发</h4>
+                            <p>106门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/55028a07c02d1.jpg" alt="">
+                            <h4>Java Web</h4>
+                            <p>65门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/php.png" alt="">
+                            <h4>PHP语言</h4>
+                            <p>41门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/ios.png" alt="">
+                            <h4>IOS开发</h4>
+                            <p>34门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/c.png" alt="">
+                            <h4>C语言</h4>
+                            <p>15门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/54cfb5a451bbd.png" alt="">
+                            <h4>C#</h4>
+                            <p>23门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/54dab77e7b38a.png" alt="">
+                            <h4>Bootstrap</h4>
+                            <p>11门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/54f56c854161d.png" alt="">
+                            <h4>Unity3D</h4>
+                            <p>45门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/54c5ebe62c7e9.png" alt="">
+                            <h4>Egret</h4>
+                            <p>7门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/54f56c854161d.png" alt="">
+                            <h4>Swift语言</h4>
+                            <p>6门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/Cocos2d-x.png" alt="">
+                            <h4>Cocos2d-x游戏开发</h4>
+                            <p>90门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/55063dcc9bfe5.jpg" alt="">
+                            <h4>计算机一级</h4>
+                            <p>7门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/55063db66c32d.jpg" alt="">
+                            <h4>计算机二级</h4>
+                            <p>25门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/551b5d8b3619d.png" alt="">
+                            <h4>Watchkit开发</h4>
+                            <p>5门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/5535fe5532a6f.png" alt="">
+                            <h4>GUI</h4>
+                            <p>27门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/5493e484b125e.png" alt="">
+                            <h4>Asp.Net</h4>
+                            <p>61门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/5540424e76332.png" alt="">
+                            <h4>Web 前端</h4>
+                            <p>180门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/5457d0aee9018.png" alt="">
+                            <h4>Python</h4>
+                            <p>48门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/55519f5fc3333.png" alt="">
+                            <h4>Docker</h4>
+                            <p>9门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/5553fd84d5963.png" alt="">
+                            <h4>Arduino</h4>
+                            <p>11门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/556543603b3e8.png" alt="">
+                            <h4>Android UiAutomator</h4>
+                            <p>20门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-system-item">
+                    <div class="cardbox">
+                        <div class="front">
+                            <img src="./img/5594956f5793e.png" alt="">
+                            <h4>Java Web职业路径图</h4>
+                            <p>81门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>600573人已学习</p>
+                            <button class="greenbtn3">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- knowledge-system-area end -->
+        <div class="coorperation-enterprise">
+            <h3><a href="">战略合作企业</a></h3>
+            <p><a href="">更多>></a></p>
+            <div class="enterprise-item-container">
+                <div class="enterprise-item"><img src="./img/microsoft.jpg" alt=""></div>
+                <div class="enterprise-item"><img src="./img/tengxun.jpg" alt=""></div>
+                <div class="enterprise-item"><img src="./img/chukong.jpg" alt=""></div>
+                <div class="enterprise-item"><img src="./img/557f8ff48f7d3.jpg" alt=""></div>
+                <div class="enterprise-item"><img src="./img/54d1d9f50e1af.jpg" alt="" style="width:150px; height=50px"></div>
+                <div class="enterprise-item"><img src="./img/keda.jpg" alt=""></div>
+                <div class="arrowbox">
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
+            </div>
+        </div>
+        <!-- coorperation-enterprise end -->
+        <div class="coorperation-university">
+            <h3><a href="">合作院校</a></h3>
+            <p><a href="">更多>></a></p>
+            <div class="university-item-container">
+                <div class="university-item"><img src="./img/c14635ad605aca1d593e1e52500945af.png" alt=""></div>
+                <div class="university-item"><img src="./img/1eb9dcb3193de807d21941b297483635.png" alt=""></div>
+                <div class="university-item"><img src="./img/3e20afc7934ef591297e6c9d377ed62a.png" alt=""></div>
+                <div class="university-item"><img src="./img/e4c3c8bbf9d5e56eeca9cc181d9abd48.png" alt=""></div>
+                <div class="university-item"><img src="./img/618f17d0b155a1cb85f2a384e9652b79.png" alt=""></div>
+                <div class="university-item"><img src="./img/3c43d20c1649101e18c0ad2177611d76.png" alt=""></div>
+                <div class="university-item"><img src="./img/496ab840e239a60c1bb4b1139268c54e.png" alt=""></div>
+            </div>
+        </div>
+        <!-- coorperation-university end -->
+        <div class="media-show">
+            <h3><a href="">媒体报道</a></h3>
+            <div class="media-item-container">
+                <div class="media-item"><img src="./img/mt_1_42b5088.jpg" alt=""></div>
+                <div class="media-item"><img src="./img/mt_2_28e84dd.jpg" alt=""></div>
+                <div class="media-item"><img src="./img/mt_3_46bc154.jpg" alt=""></div>
+                <div class="media-item"><img src="./img/mt_4_2376f75.jpg" alt=""></div>
+                <div class="media-item"><img src="./img/mt_5_8427d73.jpg" alt=""></div>
+                <div class="media-item"><img src="./img/mt_6_21a38b7.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- media-show end -->
+        <div class="backtotop">
+            <span class="gotoparrow" style="display:none;"></span>
+            <span class="phone">
+                <span class="jkQRcode"></span>
+            </span>
+            <span class="research"></span>
+            <span class="clientservice">
+	            <span class="servicetime">
+	            	<a>在线客服</a><br>
+	            	<a>工作日9:00-21:00在线</a>
+	            </span>
+            	<span class="trangle"></span>
+            </span>
+        </div>
+    </div>
+    <!-- mainbody end -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-container">
+                <ul class="geek-academy">
+                    <a>极客学院</a>
+                    <li><a href="">职业课程库</a></li>
+                    <li><a href="">知识体系图</a></li>
+                    <li><a href="">实战路径图</a></li>
+                    <li><a href="">企业课程</a></li>
+                    <li><a href="">资源下载</a></li>
+                    <li><a href="">课程标签</a></li>
+                </ul>
+                <ul class="web-service">
+                    <a>网站服务</a>
+                    <li><a href="">课程需求</a></li>
+                    <li><a href="">免费体验VIP</a></li>
+                    <li><a href="">黑板报</a></li>
+                    <li><a href="">网站地图</a></li>
+                </ul>
+                <ul class="help-center">
+                    <a>帮助中心</a>
+                    <li><a href="">技术问答</a></li>
+                    <li><a href="">VIP权益</a></li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">服务条款</a></li>
+                    <li><a href="">版权声明</a></li>
+                    <li><a href="">免责声明</a></li>
+                </ul>
+                <ul class="communicate">
+                    <a>交流合作</a>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">社会招聘</a></li>
+                    <li><a href="">布道师招募</a></li>
+                    <li><a href="">合作咨询</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">极客助教招募</a></li>
+                </ul>
+                <div class="contact">
+                    <p>极客学院，编程是一种信仰！</p>
+                    <div class="app">
+                        <a href="">
+                            <strong>手机客户端</strong>
+                            <p>离线缓存，随时学习></p>
+                        </a>
+                    </div>
+                    <br>
+                    <a href="" class="media-icon media-icon1"></a>
+                    <a href="" class="media-icon media-icon2"></a>
+                    <a href="" class="media-icon media-icon3"></a>
+                    <div class="contactus">
+                        <a href="">
+                            <h4>联系我们</h4>
+                            <p>工作日9:00-21:00在线</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-top-container end -->
+        </div>
+        <!-- footer-top end -->
+        <div class="footer-bottom">
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script type="text/javascript" src="./js/geek-academy.js"></script>
+</body>
+
+</html>
